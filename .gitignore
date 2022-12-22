@@ -4,6 +4,8 @@
 /public/storage
 /storage/*.key
 /vendor
+public/img/*.png
+resources/**/*.png
 .env
 .env.backup
 .env.production
