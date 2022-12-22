@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap');
+@font-face {
+  font-family: "LemonMilk";
+  src: url("../fonts/LEMONMILK-Light.otf") format("opentype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "LemonMilk";
+  src: url("../fonts/LEMONMILK-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "LemonMilk";
+  src: url("../fonts/LEMONMILK-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "LemonMilk";
+  src: url("../fonts/LEMONMILK-Bold.otf") format("opentype");
+  font-weight: 600;
+}
