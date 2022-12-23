@@ -36,6 +36,10 @@ module.exports = {
             height: {
                 11: "42px",
             },
+            boxShadow: {
+                afp: "inset -2px 2px 3px 0px rgba(0, 0, 0, 0.25)",
+                btn: "-2px 2px 3px 0px rgba(0, 0, 0, 0.25)",
+            },
             textShadow: {
                 afp: "-2px 2px 3px rgba(0, 0, 0, 0.25)",
             },

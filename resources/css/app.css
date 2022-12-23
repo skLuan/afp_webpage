@@ -2,7 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    body, p {
+        @apply font-jost;
+    }
+    h1,h2,h3,h4,h5,h6 {
+        @apply font-lemon font-medium uppercase;
+    }
+}
+
 @layer components {
+    .active{
+        @apply !text-white font-bold;
+    }
     .t-inner-shadow {
 
         @apply bg-black text-transparent;

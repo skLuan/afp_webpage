@@ -15,39 +15,138 @@
 
 <body class="bg-white-bg">
     <div class="topbar px-5 text-white bg-black flex justify-between h-11 items-center">
-        <a href="" class="text-sm uppercase font-jost underline">
-        Go to Whatsapp
+        <a href="" class="text-sm uppercase font-jost font-medium underline">
+            Go to Whatsapp
         </a>
         <button class="">English</button>
     </div>
 
     <section id="slider" class="swiper">
         <div class="swiper-wrapper">
-            <div class="px-5 swiper-slide bg-[url('@/img/img-hero-sm.png')] h-full grid grid-cols-5 gap-[15px]">
-                <article class="pt-11 pb-16 text-white col-span-3 col-start-3">
-                    <h1 class="uppercase font-lemon"><span class="text-lg">Macrosynthetic</span> <br><span class="text-5xl">fibers</span></h1>
-                    <p class="font-jost font-normal text-base leading-none">Control the propagation of cracks in the concrete, make your projects withstand the past of time.</p>
+            {{-- Slide --}}
+            <div
+                class="px-5 swiper-slide bg-[url('@/img/img-hero-sm.png')] bg-cover bg-center h-full grid grid-cols-5 gap-[15px]">
+                <article class="pt-11 pb-12 text-white col-span-3 col-start-3">
+                    <h1 class="uppercase font-lemon"><span class="text-lg">Macrosynthetic</span> <br><span
+                            class="text-5xl">fibers</span></h1>
+                    <p class="font-jost font-normal text-base leading-none">Control the propagation of cracks in the
+                        concrete, make your projects withstand the past of time.</p>
                 </article>
-                <div id="hero-buttons" class="col-span-full text-white">
-                    <div>
-                        <a href="" class="text-lg underline font-lemon">Fibers</a> <span>Explore the reinforcements</span>
+                <div id="hero-buttons" class="col-span-full text-white pb-14">
+                    <div class="flex flex-row justify-between pb-7">
+                        <a href="" class="text-lg underline font-lemon">Fibers</a>
+                        <div class="h-[1px] w-10 bg-white my-auto"></div> <span>Explore the reinforcements</span>
                     </div>
-                    <div>
-                        <a href="" class="text-lg underline font-lemon">Engeniering</a> <span>Create your own</span>
+                    <div class="flex flex-row justify-between">
+                        <a href="" class="text-lg underline font-lemon">Engeniering</a>
+                        <div class="h-[1px] w-10 bg-white my-auto"></div> <span>Create your own</span>
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide"> other slider</div>
+            {{-- -----------------close Slide --}}
+            {{-- Slider --}}
+            <div
+                class="px-5 swiper-slide bg-[url('@/img/img-hero-sm.png')] bg-cover bg-center h-full grid grid-cols-5 gap-[15px]">
+                <article class="pt-11 pb-12 text-white col-span-3 col-start-3">
+                    <h1 class="uppercase font-lemon"><span class="text-lg">Macrosynthetic</span> <br><span
+                            class="text-5xl">fibers</span></h1>
+                    <p class="font-jost font-normal text-base leading-none">Control the propagation of cracks in the
+                        concrete, make your projects withstand the past of time.</p>
+                </article>
+                <div id="hero-buttons" class="col-span-full text-white pb-14">
+                    <div class="flex flex-row justify-between pb-7">
+                        <a href="" class="text-lg underline font-lemon">Fibers</a>
+                        <div class="h-[1px] w-10 bg-white my-auto"></div> <span>Explore the reinforcements</span>
+                    </div>
+                    <div class="flex flex-row justify-between">
+                        <a href="" class="text-lg underline font-lemon">Engeniering</a>
+                        <div class="h-[1px] w-10 bg-white my-auto"></div> <span>Create your own</span>
+                    </div>
+                </div>
+            </div>
+            {{-- -----------------close Slider --}}
+
         </div>
-        {{-- <picture>
-            <img src="/img/img-hero-sm.png" alt="">
-        </picture> --}}
     </section>
 
-    <section id="about" class="">
+    <section id="about" class="pb-32">
         <div class="bg-black px-5">
+            <picture class="ml-auto flex py-9">
+                <img class="ml-auto" src="{{ Vite::asset('resources/img/logo.png') }}" width="50%" alt="">
+            </picture>
             <h3 class="uppercase font-medium text-white text-2xl font-lemon">strong concrete</h3>
         </div>
+        <div class=" px-5 pt-3 pb-16 grid grid-cols-5 gap-[15px]">
+            <p class="font-jost leading-tight pr-7 col-span-full">The concrete matrix without macro synthetic fiber
+                reinforcement present brittle behavior, with low bearing capacity and low deformations when subjected to
+                tensile stresses (flexural tensile), presenting practically no plastic deformations.</p>
+            <picture class="col-span-2 mt-auto mb-2">
+                <img src="{{ Vite::asset('resources/img/circle-img-space.png') }}" alt="">
+            </picture>
+            <div class="col-span-3 col-start-3 pt-20">
+                <h3 class="font-lemon text-2xl font-medium text-grey pb-4">Process</h3>
+                <p class="font-jost leading-tight pr-7">The concrete matrix without macro synthetic fiber reinforcement
+                    present brittle behavior, with low bearing capacity and low deformations</p>
+            </div>
+        </div>
+        <div id="usaMAde" class="shadow-afp px-5 py-4 flex justify-center bg-white-bg">
+            <picture>
+                <img src="{{ Vite::asset('resources/img/USAlogo.png') }}" alt="">
+            </picture>
+        </div>
+    </section>
+
+    <section id="fiber-engineering" class="px-5 pb-32">
+        <h2 class="uppercase text-yellow font-lemon font-medium text-4xl">Fiber <br> engineering</h2>
+        <h5 class="uppercase font-lemon text-lg text-grey">Create your oun matrix</h5>
+        <div class="grid grid-cols-5 gap-[15px]">
+            <p class="pt-5 pb-8 col-span-4">
+                Each project need special requirements, speak with us for a Fiber unique as your project
+            </p>
+            <h6 class="col-span-2 ml-auto text-grey text-xl text-right col-start-4">What it is?</h6>
+            <p class="pt-5 pb-8 col-span-4">
+                The concrete matrix without macro synthetic fiber reinforcement present brittle behavior, with low
+                bearing capacity and low deformations
+            </p>
+            <div class="col-span-3 flex">
+                <a href="" class="mx-auto bg-grey-light px-8 py-[2px] rounded-sm shadow-btn text-white">See
+                    more</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="How-work" class="flex flex-col">
+        <h6 class="col-span-2 ml-auto text-grey text-xl text-right px-5 pb-2">How we work?</h6>
+        <ul id="tabs-work" class="tabs bg-grey flex flex-row justify-evenly py-2 shadow-afp">
+            <li class=" text-xl text-grey-light active"><button>Step1</button></li>
+            <li class=" text-xl text-grey-light"><button>Step2</button></li>
+            <li class=" text-xl text-grey-light"><button>Step3</button></li>
+            <li class=" text-xl text-grey-light"><button>Step4</button></li>
+        </ul>
+        <div class="grid gap-[15px] grid-cols-5">
+            <picture class="col-span-3 mt-auto mb-2">
+                <img src="{{ Vite::asset('resources/img/how-work-img.png') }}" alt="">
+            </picture>
+            <picture class="col-start-4 col-span-2 mt-8 mb-auto">
+                <img src="{{ Vite::asset('resources/img/circle-img-space.png') }}" alt="">
+            </picture>
+            <p class="-mt-11 leading-tight pb-8 col-span-4 col-start-2 pl-3 pr-5">
+                The concrete matrix without macro synthetic fiber reinforcement present brittle behavior, with low
+                bearing capacity and low deformations
+            </p>
+        </div>
+        <div class="col-span-full flex">
+            <button class="text-yellow uppercase font-bold text-sm font-me mx-auto bg-grey shado-afp px-16 py-2 rounded-[3px]" >Create fibers</button>
+        </div>
+    </section>
+
+    <section id="general-imgs" class="grid gap-[15px] grid-cols-5 mt-20">
+        <picture class="col-span-4" >
+            <img src="{{ Vite::asset('resources/img/img-1.png') }}" alt="">
+        </picture>
+        <picture class="col-span-4 col-start-2" >
+            <img src="{{ Vite::asset('resources/img/img-2.png') }}" alt="">
+        </picture >
     </section>
 
 </body>
