@@ -117,38 +117,52 @@
 
     <section id="How-work" class="flex flex-col">
         <h6 class="col-span-2 ml-auto text-grey text-xl text-right px-5 pb-2">How we work?</h6>
-        <ul id="tabs-work" class="tabs bg-grey flex flex-row justify-evenly py-2 shadow-afp">
-            <li class=" text-xl text-grey-light active"><button>Step1</button></li>
-            <li class=" text-xl text-grey-light"><button>Step2</button></li>
-            <li class=" text-xl text-grey-light"><button>Step3</button></li>
-            <li class=" text-xl text-grey-light"><button>Step4</button></li>
-        </ul>
-        <div class="grid gap-[15px] grid-cols-5">
-            <picture class="col-span-3 mt-auto mb-2">
-                <img src="{{ Vite::asset('resources/img/how-work-img.png') }}" alt="">
-            </picture>
-            <picture class="col-start-4 col-span-2 mt-8 mb-auto">
-                <img src="{{ Vite::asset('resources/img/circle-img-space.png') }}" alt="">
-            </picture>
-            <p class="-mt-11 leading-tight pb-8 col-span-4 col-start-2 pl-3 pr-5">
-                The concrete matrix without macro synthetic fiber reinforcement present brittle behavior, with low
-                bearing capacity and low deformations
-            </p>
-        </div>
+        <x-steps></x-steps>
         <div class="col-span-full flex">
-            <button class="text-yellow uppercase font-bold text-sm font-me mx-auto bg-grey shado-afp px-16 py-2 rounded-[3px]" >Create fibers</button>
+            <button
+                class="text-yellow uppercase font-bold text-sm font-me mx-auto bg-grey shado-afp px-16 py-2 rounded-[3px]">Create
+                fibers</button>
         </div>
     </section>
 
     <section id="general-imgs" class="grid gap-[15px] grid-cols-5 mt-20">
-        <picture class="col-span-4" >
+        <picture class="col-span-4">
             <img src="{{ Vite::asset('resources/img/img-1.png') }}" alt="">
         </picture>
-        <picture class="col-span-4 col-start-2" >
+        <picture class="col-span-4 col-start-2">
             <img src="{{ Vite::asset('resources/img/img-2.png') }}" alt="">
-        </picture >
+        </picture>
     </section>
 
+    <section id="fibers" class="mt-32">
+        <h2 class="px-5 uppercase text-yellow font-lemon font-medium text-4xl mb-16">Fibers</h2>
+        {{-- component --}}
+        <x-fiber-card></x-fiber-card>
+        <div class="flex">
+            <a href=""
+            class="shadow-btn uppercase text-white bg-grey-light px-9 py-2 rounded-2 mx-auto my-36 font-bold">See
+            all Fibers</a>
+        </div>
+        <x-fiber-card></x-fiber-card>
+    </section>
+    <section id="contact">
+        <div class="flex bg-grey shadow-afp px-5 py-1 justify-around">
+            <span class="uppercase text-white font-bold text-lg">Engineering</span>
+            <div class="h-[17px] w-[2px] my-auto bg-grey-light"></div>
+            <span class="uppercase text-grey-light font-bold text-base">Buy Fibers</span>
+        </div>
+        <form id="engineering" class="flex flex-col mx-auto py-5 px-16" action="{{Vite::asset('resources/php/emailSender.php')}}" method="post">
+            <label for="inputName" class="text-grey-light pl-1 border-none">Name</label>
+            <input class="mb-2 shadow-afp rounded-sm focus:!border-yellow focus:border-[1px] focus:bg-white-true focus:shadow-btn border-none bg-white" type="text" name="name" id="inputName">
+            <label for="inputEmail" class="text-grey-light pl-1">Email</label>
+            <input class="mb-2 shadow-afp rounded-sm focus:!border-yellow focus:border-[1px] focus:bg-white-true focus:shadow-btn bg-white" type="mail" name="email" id="inputEmail">
+            <label for="inputPhone" class="text-grey-light pl-1">Phone</label>
+            <input class="mb-2 shadow-afp rounded-sm focus:!border-yellow focus:border-[1px] focus:bg-white-true focus:shadow-btn bg-white" type="phone" name="phone" id="inputPhone">
+            <label for="inputNotes" class="text-grey-light pl-1">Notes</label>
+            <textarea class="mb-2 shadow-afp rounded-sm focus:!border-yellow focus:border-[1px] focus:bg-white-true focus:shadow-btn border-none  bg-white" name="notes" id="inputNotes" cols="30" rows="10"></textarea>
+            <button class="uppercase font-bold text-yellow bg-white-true w-40 py-1 my-16 mx-auto shadow-btn rounded" type="submit">send</button>
+        </form>
+    </section>
 </body>
 
 </html>
