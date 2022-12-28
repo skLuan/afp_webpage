@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,9 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', [Controller::class, 'showHome'])->name('home');
+Route::post('/', [Controller::class, 'sendForm'])->name('sendForm');
 Route::get('/fibers', function () {
     return view('fibers');
 });
