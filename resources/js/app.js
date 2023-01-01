@@ -13,7 +13,8 @@ const swiper = new Swiper('.swiper');
 
 const tabSelects = document.getElementById("tabs-work").childNodes;
 const divSelected = document.querySelectorAll(".how-work-div");
-console.log(divSelected);
+
+// ------------------- tapbs for steps
 const resetTabs = () => {
     tabSelects.forEach((tabb) => {
         if( tabb.classList != undefined) {
@@ -33,7 +34,6 @@ const resetTabs = () => {
 }
 
 tabSelects.forEach((tab,i) => {
-    console.log(tab);
     tab.addEventListener('click', () => {
         resetTabs();
         // tab.classList.contains('active')? tab.classList.remove('active') : tab.classList.add('active');
@@ -59,3 +59,6 @@ tabSelects.forEach((tab,i) => {
         // divSelected[]
     });
 });
+
+// --------------------------------
+

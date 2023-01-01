@@ -14,9 +14,9 @@ class Controller extends BaseController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
 
-    public function sendForm() {
-        Mail::to('erazo.luan@gmail.com')->send(new ForAdmin());
-        return view('home');
+    public function sendForm($name, $email, $phone, $message) {
+        // Mail::to('erazo.luan@gmail.com')->send(new ForAdmin($name, $email, $phone, $message));
+        return response()->json(['body' => 'succeeesss hpta!']);
     }
 
     public function showHome(){

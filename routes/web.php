@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [Controller::class, 'showHome'])->name('home');
-Route::post('/', [Controller::class, 'sendForm'])->name('sendForm');
+Route::post('/sendForm', [Controller::class, 'sendForm'])->name('sendForm');
 Route::get('/fibers', function () {
     return view('fibers');
 });

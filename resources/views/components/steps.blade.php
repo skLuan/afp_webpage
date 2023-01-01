@@ -20,7 +20,7 @@
         {{-- -------------------------cut of divs --}}
         <div class="how-work-div hidden gap-[15px] grid-cols-5">
             <picture class="col-span-3 mt-auto mb-2">
-                <img src="{{ Vite::asset('resources/img/how-work-img.png') }}" alt="">
+                <img src="{{ Vite::asset('resources/img/img-1.png') }}" alt="">
             </picture>
             <picture class="col-start-4 col-span-2 mt-8 mb-auto">
                 <img src="{{ Vite::asset('resources/img/circle-img-space.png') }}" alt="">
@@ -33,7 +33,7 @@
         {{-- -------------------------cut of divs --}}
         <div class="how-work-div hidden gap-[15px] grid-cols-5">
             <picture class="col-span-3 mt-auto mb-2">
-                <img src="{{ Vite::asset('resources/img/how-work-img.png') }}" alt="">
+                <img src="{{ Vite::asset('resources/img/img-2.png') }}" alt="">
             </picture>
             <picture class="col-start-4 col-span-2 mt-8 mb-auto">
                 <img src="{{ Vite::asset('resources/img/circle-img-space.png') }}" alt="">
