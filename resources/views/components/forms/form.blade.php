@@ -1,4 +1,4 @@
-        <form id="engineering" name="engine" action="javascript:;" onsubmit="formGoing()"
+        <form id="engineering" name="engine" action="//javascript:;" onsubmit="//formGoing()"
             class="flex flex-col mx-auto py-5 px-16">
             @csrf
             <label for="inputName" class="text-grey-light pl-1 border-none">Name</label>
@@ -8,12 +8,12 @@
 
                 <label for="inputEmail" class="text-grey-light pl-1">Email</label>
             <input
-                class="py-2 mb-2 shadow-afp rounded-sm focus:!border-yellow focus:border-[1px] focus:bg-white-true focus:shadow-btn bg-white"
+                class="py-2 mb-2 shadow-afp rounded-sm focus:!border-yellow focus:border-[1px] focus:bg-white-true focus:shadow-btn bg-white border-none"
                 type="email" name="email" id="inputEmail">
 
             <label for="inputPhone" class="text-grey-light pl-1">Phone</label>
             <input
-                class="py-2 mb-2 shadow-afp rounded-sm focus:!border-yellow focus:border-[1px] focus:bg-white-true focus:shadow-btn bg-white"
+                class="py-2 mb-2 shadow-afp rounded-sm focus:!border-yellow focus:border-[1px] focus:bg-white-true focus:shadow-btn bg-white border-none"
                 type="tel" name="phone" id="inputPhone">
 
             <label for="inputNotes" class="text-grey-light pl-1">Notes</label>

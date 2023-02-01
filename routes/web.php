@@ -16,12 +16,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [Controller::class, 'showHome'])->name('home');
+Route::redirect('/', 'maintenance');
 Route::post('/sendForm', [Controller::class, 'sendForm'])->name('sendForm');
 Route::get('/fibers', function () {
     return view('fibers');
 });
 Route::get('/engineering', function () {
     return view('fibers');
+});
+Route::get('/test', function () {
+    return view('home');
+});
+Route::get('/maintenance', function () {
+    return view('maintenance');
 });
 
 Route::get('/dashboard', function () {

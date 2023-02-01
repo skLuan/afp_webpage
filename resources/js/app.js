@@ -1,4 +1,4 @@
-import.meta.glob(["../fonts/**", "../img/**", "../php/**"]);
+import.meta.glob(["../fonts/**", "../img/**"]);
 import './bootstrap';
 import Alpine from 'alpinejs';
   // import Swiper bundle with all modules installed
@@ -11,7 +11,7 @@ Alpine.start();
 
 const swiper = new Swiper('.swiper');
 
-const tabSelects = document.getElementById("tabs-work").childNodes;
+const tabSelects = document.getElementById("tabs-work").childNodes? document.getElementById("tabs-work").childNodes : [];
 const divSelected = document.querySelectorAll(".how-work-div");
 
 // ------------------- tapbs for steps

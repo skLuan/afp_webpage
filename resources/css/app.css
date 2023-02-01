@@ -12,6 +12,9 @@
 }
 
 @layer components {
+    body#maintenance {
+    height: 100vh;
+    }
     .active{
         @apply !text-white font-bold;
     }
