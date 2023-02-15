@@ -22,7 +22,7 @@ Route::get('/fibers', function () {
     return view('fibers');
 });
 Route::get('/engineering', function () {
-    return view('fibers');
+    return view('engineering');
 });
 Route::get('/test', function () {
     return view('home');

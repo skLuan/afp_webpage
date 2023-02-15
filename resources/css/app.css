@@ -3,28 +3,36 @@
 @tailwind utilities;
 
 @layer base {
-    body, p {
+    body,
+    p {
         @apply font-jost;
     }
-    h1,h2,h3,h4,h5,h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         @apply font-lemon font-medium uppercase;
     }
 }
 
 @layer components {
     body#maintenance {
-    height: 100vh;
+        height: 100vh;
     }
-    .active{
+    .active {
         @apply !text-white font-bold;
     }
     .t-inner-shadow {
-
         @apply bg-black text-transparent;
         /* text-shadow: -2px 2px 3px rgba(0, 0, 0, 0.25); */
-          text-shadow: -2px 2px 3px rgba(237, 235, 232, .85);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
+        text-shadow: -2px 2px 3px rgba(237, 235, 232, 0.85);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+    }
+    .swiper {
+    @apply !mr-0 !ml-0;
     }
 }
