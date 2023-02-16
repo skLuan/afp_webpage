@@ -9,8 +9,26 @@ import Swiper from 'swiper/bundle';
 window.Alpine = Alpine;
 Alpine.start();
 
-const swiper = new Swiper('.swiper');
+const swiper = new Swiper(".swiper");
+const swiperThumb = new Swiper(".swiper-thumb", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
 
+var swiperbigThumb = new Swiper(".mySwiper-thumb-big", {
+    loop: true,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+        swiper: swiper,
+    },
+});
 const tabSelects = document.getElementById("tabs-work").childNodes? document.getElementById("tabs-work").childNodes : [];
 const divSelected = document.querySelectorAll(".how-work-div");
 

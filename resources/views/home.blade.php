@@ -162,11 +162,11 @@
         <h2 class="px-5 uppercase text-yellow font-lemon font-medium text-4xl mb-5">Fibers</h2>
         {{-- component --}}
         <x-fiber-card></x-fiber-card>
-        <div class="flex">
-            <a href=""
-                class="shadow-btn uppercase text-white bg-grey-light px-9 py-2 rounded-2 mx-auto my-36 font-bold">See
-                all Fibers</a>
-        </div>
+        <h6 class="text-center text-grey-light font-normal text-lg font-jost normal-case">More fibers coming!</h6>
+    </section>
+    <section id="projects" class="mt-52">
+        <h6 class="text-center text-grey-light font-medium text-xl">Projects with our fibers</h6>
+        <x-slider.thmbnail></x-slider.thmbnail>
     </section>
     <section id="contact">
         <div class="flex bg-grey shadow-afp px-5 py-1 justify-around">

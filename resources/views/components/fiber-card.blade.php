@@ -20,5 +20,5 @@
         <div class="flex px-5 justify-around py-9">
             <button
                 class="text-yellow uppercase shadow-btn font-bold bg-grey font-jost py-1 px-6 rounded-sm">buy</button>
-            <a href="" class="font-semibold text-lg underline text-grey">Read more</a>
+            <a href="/fibers" class="font-semibold text-lg underline text-grey">Read more</a>
         </div>

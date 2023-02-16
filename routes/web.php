@@ -19,7 +19,7 @@ Route::get('/', [Controller::class, 'showHome'])->name('home');
 Route::redirect('/', 'maintenance');
 Route::post('/sendForm', [Controller::class, 'sendForm'])->name('sendForm');
 Route::get('/fibers', function () {
-    return view('fibers');
+    return view('fiber');
 });
 Route::get('/engineering', function () {
     return view('engineering');
