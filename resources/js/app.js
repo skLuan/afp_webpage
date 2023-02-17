@@ -18,17 +18,19 @@ const swiperThumb = new Swiper(".swiper-thumb", {
     watchSlidesProgress: true,
 });
 
-var swiperbigThumb = new Swiper(".mySwiper-thumb-big", {
+var swiperbigThumb = new Swiper(".swiper-thumb-big", {
     loop: true,
-    spaceBetween: 10,
+    spaceBetween: 20,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
     thumbs: {
-        swiper: swiper,
+        swiper: swiperThumb,
     },
 });
+
+
 const tabSelects = document.getElementById("tabs-work").childNodes? document.getElementById("tabs-work").childNodes : [];
 const divSelected = document.querySelectorAll(".how-work-div");
 
