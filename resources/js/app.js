@@ -1,38 +1,21 @@
 import.meta.glob(["../fonts/**", "../img/**"]);
 import './bootstrap';
 import Alpine from 'alpinejs';
-  // import Swiper bundle with all modules installed
-import Swiper from 'swiper/bundle';
-  // import styles bundle
-  import 'swiper/css/bundle';
-
+  // import Swiper bundle with all modules installed  // import styles bundle
+import slidersGeneral from './sliders/general';
+import scrollSmooth from './scrollSmooth';
 window.Alpine = Alpine;
 Alpine.start();
 
-const swiper = new Swiper(".swiper");
-const swiperThumb = new Swiper(".swiper-thumb", {
-    loop: true,
-    spaceBetween: 10,
-    slidesPerView: 4,
-    freeMode: true,
-    watchSlidesProgress: true,
-});
-
-var swiperbigThumb = new Swiper(".swiper-thumb-big", {
-    loop: true,
-    spaceBetween: 20,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    thumbs: {
-        swiper: swiperThumb,
-    },
-});
-
-
 const tabSelects = document.getElementById("tabs-work").childNodes? document.getElementById("tabs-work").childNodes : [];
 const divSelected = document.querySelectorAll(".how-work-div");
+
+// ---- corro los sliders
+slidersGeneral();
+//------
+
+//------ Scroll smooth for
+scrollSmooth();
 
 // ------------------- tapbs for steps
 const resetTabs = () => {

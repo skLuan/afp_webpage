@@ -3,9 +3,9 @@
     <div class="lg:grid lg:gap-0 lg:grid-cols-12">
         <x-slider.slider></x-slider.slider>
         {{-- -------------------------------About section --}}
-        <section id="about" class="lg:col-start-8 lg:h-[120%] lg:col-span-5">
+        <section id="about" class="lg:col-start-8 lg:h-[120%] lg:col-span-5 lg:bg-black-concrete-1">
 
-            <div class="bg-black px-5 h-full lg:flex lg:flex-col">
+            <div class="bg-black bg-black-concrete-1 bg-cover bg-center lg:bg-transparent  px-5 h-full lg:flex lg:flex-col">
                 <picture class="ml-auto flex py-9">
                     <img class="ml-auto lg:hidden" src="{{ Vite::asset('resources/img/logo.png') }}" width="50%"
                         alt="">
@@ -135,7 +135,6 @@
     </section>
     {{-- --- _____CLOSE ---------------------------------------Fiber Engineer --}}
 
-
     <section id="How-work" class="flex flex-col">
         <h6 class="col-span-2 ml-auto lg:ml-32 text-grey-light text-xl text-right lg:!text-left px-5 pb-2">How we work?
         </h6>
@@ -159,13 +158,14 @@
     </section>
 
     <section id="fibers" class="mt-32">
-        <h2 class="px-5 uppercase text-yellow font-lemon font-medium text-4xl mb-5">Fibers</h2>
+        <h2 class="px-5 lg:pl-32 uppercase text-yellow font-lemon font-medium text-4xl mb-5">Fibers</h2>
         {{-- component --}}
         <x-fiber-card></x-fiber-card>
-        <h6 class="text-center text-grey-light font-normal text-lg font-jost normal-case">More fibers coming!</h6>
+        <h6 class="text-center text-grey-light font-normal text-lg font-jost normal-case lg:text-xl lg:mt-36">More fibers coming!</h6>
     </section>
-    <section id="projects" class="mt-52">
-        <h6 class="text-center text-grey-light font-medium text-xl">Projects with our fibers</h6>
+
+    <section id="projects" class="mt-36">
+        <h6 class="text-center text-grey-light font-medium text-xl mb-5">Projects with our fibers</h6>
         <x-slider.thmbnail></x-slider.thmbnail>
     </section>
     <section id="contact">

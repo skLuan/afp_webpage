@@ -37,7 +37,7 @@
     }
 }
 
-.swiper-slide {
+#projects-swiper .swiper-slide {
     @apply bg-transparent;
     text-align: center;
     font-size: 18px;
@@ -84,8 +84,11 @@
     height: 100%;
     object-fit: cover;
 }
+ .swiper-thumb .swiper-slide, .swiper-thumb .swiper-slide img {
+    @apply w-full lg:max-w-[150px] h-full lg:h-auto rounded-md;
+}
 .swiper-thumb-big .swiper-slide img {
-    @apply w-full lg:w-1/2 h-full lg:h-1/2;
+    @apply w-full lg:w-1/2 h-full lg:h-1/2 rounded-md;
     display: block;
     object-fit: cover;
 }

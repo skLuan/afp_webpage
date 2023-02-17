@@ -33,6 +33,9 @@ module.exports = {
                 lemon: ["LemonMilk"],
                 jost: ["Jost"],
             },
+            backgroundImage: {
+                'black-concrete-1': "url('/resources/img/bg.png')",
+            },
             height: {
                 11: "42px",
             },

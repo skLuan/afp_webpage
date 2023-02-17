@@ -11,11 +11,11 @@
             </article>
             <div id="hero-buttons" class="col-span-full text-white pb-14">
                 <div class="flex flex-row-reverse justify-between lg:justify-end pb-7">
-                    <a href="" class="text-lg underline font-lemon">Fibers</a>
+                    <a href="#fibers" class="text-lg underline font-lemon">Fibers</a>
                     <div class="h-[1px] w-10 lg:w-1/4 bg-white my-auto lg:mx-12"></div> <span class="font-light text-lg lg:text-2xl">Explore the reinforcements</span>
                 </div>
                 <div class="flex flex-row-reverse justify-between lg:justify-end">
-                    <a href="" class="text-lg underline font-lemon">Engeniering</a>
+                    <a href="#fiber-engineering" class="text-lg underline font-lemon">Engeniering</a>
                     <div class="h-[1px] w-10 lg:w-1/3 bg-white my-auto lg:mx-12"></div> <span class="font-light text-lg lg:text-2xl">Create your own</span>
                 </div>
             </div>
