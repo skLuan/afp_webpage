@@ -21,6 +21,7 @@ export default () => {
     });
 
     const swiperSteps = new Swiper(".swiperSteps", {
+        loop: true,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,

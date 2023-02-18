@@ -3,9 +3,9 @@
 
         <h3 class="font-semibold normal-case !font-jost text-2xl pr-1 col-span-5 lg:col-span-4 text-grey">Armor fiber PF 54 <span
                 class="font-jost text-2xl font-light text-grey">MM</span></h3>
-        <div class="flex col-span-4 justify-between lg:col-span-3">
-            <h4 class="font-medium lg:my-auto capitalize font-jost text-base">Polypropylene</h4>
-            <div class="h-[30px] my-auto w-[1px] shadow-btn bg-grey"></div>
+        <div class="flex col-span-4 justify-between lg:justify-start lg:col-span-4">
+            <h4 class="font-medium lg:my-auto lg:pl-8 capitalize font-jost text-base">Polypropylene</h4>
+            <div class="h-[30px] my-auto lg:mx-5 w-[1px] shadow-btn bg-grey"></div>
             <h4 class="font-medium lg:my-auto capitalize font-jost text-base">Fibralared</h4>
         </div>
         <p class="hidden lg:block leading-tight col-span-5 mt-10">

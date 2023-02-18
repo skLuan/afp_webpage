@@ -1,5 +1,5 @@
         <form id="engineering" name="engine" action="//javascript:;" onsubmit="//formGoing()"
-            class="flex flex-col mx-auto py-5 px-16">
+            class="flex flex-col mx-auto py-10 px-16 lg:max-w-2xl">
             @csrf
             <label for="inputName" class="text-grey-light pl-1 border-none">Name</label>
             <input

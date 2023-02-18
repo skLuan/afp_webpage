@@ -17,6 +17,7 @@
         "vite": "^4.0.0"
     },
     "dependencies": {
+        "iconify-icon": "^1.0.5",
         "swiper": "^8.4.5"
     }
 }

@@ -5,7 +5,8 @@
         {{-- -------------------------------About section --}}
         <section id="about" class="lg:col-start-8 lg:h-[120%] lg:col-span-5 lg:bg-black-concrete-1">
 
-            <div class="bg-black bg-black-concrete-1 bg-cover bg-center lg:bg-transparent  px-5 h-full lg:flex lg:flex-col">
+            <div
+                class="bg-black bg-black-concrete-1 bg-cover bg-center lg:bg-transparent  px-5 h-full lg:flex lg:flex-col">
                 <picture class="ml-auto flex py-9">
                     <img class="ml-auto lg:hidden" src="{{ Vite::asset('resources/img/logo.png') }}" width="50%"
                         alt="">
@@ -147,11 +148,11 @@
     </section>
 
     <section id="general-imgs" class="grid gap-[15px] grid-cols-6 my-40">
-        <picture class="col-span-3 mt-32">
+        <picture class="col-span-4">
             <source media="(min-width: 1000px)" srcset="{{ Vite::asset('resources/img/how-work-img-pc.png') }}">
             <img src="{{ Vite::asset('resources/img/img-1.png') }}" alt="">
         </picture>
-        <picture class="col-span-3 col-start-4">
+        <picture class="col-span-4 col-start-3">
             <source media="(min-width: 1000px)" srcset="{{ Vite::asset('resources/img/img-4.png') }}">
             <img width="100%" src="{{ Vite::asset('resources/img/img-2.png') }}" alt="">
         </picture>
@@ -161,14 +162,59 @@
         <h2 class="px-5 lg:pl-32 uppercase text-yellow font-lemon font-medium text-4xl mb-5">Fibers</h2>
         {{-- component --}}
         <x-fiber-card></x-fiber-card>
-        <h6 class="text-center text-grey-light font-normal text-lg font-jost normal-case lg:text-xl lg:mt-36">More fibers coming!</h6>
+        <h6 class="text-center text-grey-light font-normal text-lg font-jost normal-case lg:text-xl lg:mt-36">More
+            fibers coming!</h6>
     </section>
 
     <section id="projects" class="mt-36">
         <h6 class="text-center text-grey-light font-medium text-xl mb-5">Projects with our fibers</h6>
         <x-slider.thmbnail></x-slider.thmbnail>
+        <div class="flex flex-col items-center my-20">
+            <button
+                class="text-yellow uppercase font-bold text-sm mx-auto bg-grey shado-afp px-16 py-2 rounded-[3px]">Create
+                fibers</button>
+            <span class="py-4 font-thin text-xl">or</span>
+            <a class="mb-auto underline font-bold text-base text-grey" href="/fibers">See Armor fiber PF 54 MM</a>
+        </div>
     </section>
+
+    <section id="why-us" class="grid grid-cols-5 lg:grid-cols-12 px-5 mb-32">
+        <h3 class="text-grey-light text-xl col-span-2 lg:col-start-2 lg:mb-5">Why us?</h3>
+        <p class="col-span-4 lg:col-start-2 my-5 lg:my-0 text-base text-black leading-tight">Our team of highly trained engineers and designers
+            are experts in material and slab
+            reinforcement techniques. We use advanced technology and our own design software to accurately simulate
+            fiber-reinforced slabs.</p>
+        <p class="col-span-4 col-start-2 lg:col-start-7 text-base text-black leading-tight">Collaborating closely with customers and
+            market players, we understand their
+            needs and effectively communicate our designs. At the forefront of innovation, we continuously research and
+            develop advanced techniques and materials for slab reinforcement.</p>
+
+        <div class="col-span-3 col-start-2 lg:col-span-4 lg:col-start-5 mt-20">
+            <h6 class="text-grey-light font-jost normal-case font-normal text-lg text-center">Stay in contact</h6>
+            <a href="" class="text-center block underline text-grey font-bold my-5">Say hi</a>
+            <div class="flex flex-row justify-around">
+                <a href="">
+                    <iconify-icon class="text-blue-400" icon="bi:linkedin" height="24"></iconify-icon>
+                </a>
+            </div>
+            <div class="">
+                <div class="flex my-5 justify-evenly">
+                    <span class="font-normal text-sm text-black opacity-50 mr-auto lg:mr-0 lg:pr-11">Email</span><a
+                    href="">Mail@mail.com</a>
+                </div>
+                <div class="flex flex-row justify-evenly">
+                    <span class="mr-auto lg:mr-0">
+                        <span class="block font-normal text-sm text-black opacity-50">Phone</span>
+                        <span class="block font-normal text-sm text-black opacity-50">Whatsapp</span>
+                    </span>
+                    <a href="">+1 000 0000000</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact">
+        <h6 class="text-grey-light font-jost normal-case font-normal text-2xl text-center">Im interested in</h6>
         <div class="flex bg-grey shadow-afp px-5 py-1 justify-around">
             <span class="uppercase text-white font-bold text-lg">Engineering</span>
             <div class="h-[17px] w-[2px] my-auto bg-grey-light"></div>
