@@ -18,50 +18,50 @@ slidersGeneral();
 scrollSmooth();
 
 // ------------------- tapbs for steps
-const resetTabs = () => {
-    tabSelects.forEach((tabb) => {
-        if( tabb.classList != undefined) {
-            if (tabb.classList.contains("active")){
-                tabb.classList.remove("active");
-            }
-        }
-    })
-    divSelected.forEach((tabb) => {
-        if( tabb.classList != undefined) {
-            if (tabb.classList.contains("grid")){
-                tabb.classList.remove("grid");
-                tabb.classList.add("hidden");
-            }
-        }
-    })
-}
+// const resetTabs = () => {
+//     tabSelects.forEach((tabb) => {
+//         if( tabb.classList != undefined) {
+//             if (tabb.classList.contains("active")){
+//                 tabb.classList.remove("active");
+//             }
+//         }
+//     })
+//     divSelected.forEach((tabb) => {
+//         if( tabb.classList != undefined) {
+//             if (tabb.classList.contains("grid")){
+//                 tabb.classList.remove("grid");
+//                 tabb.classList.add("hidden");
+//             }
+//         }
+//     })
+// }
 
-tabSelects.forEach((tab,i) => {
-    tab.addEventListener('click', () => {
-        resetTabs();
-        // tab.classList.contains('active')? tab.classList.remove('active') : tab.classList.add('active');
-        tab.classList.add('active');
-        switch(i){
-            case 1:
-            divSelected[0].classList.remove('hidden');
-            divSelected[0].classList.add('grid');
-            break;
-            case 3:
-                divSelected[1].classList.remove('hidden');
-                divSelected[1].classList.add('grid');
-            break;
-            case 5:
-                divSelected[2].classList.remove('hidden');
-                divSelected[2].classList.add('grid');
-            break;
-            case 7:
-                divSelected[3].classList.remove('hidden');
-                divSelected[3].classList.add('grid');
-            break;
-        }
-        // divSelected[]
-    });
-});
+// tabSelects.forEach((tab,i) => {
+//     tab.addEventListener('click', () => {
+//         resetTabs();
+//         // tab.classList.contains('active')? tab.classList.remove('active') : tab.classList.add('active');
+//         tab.classList.add('active');
+//         switch(i){
+//             case 1:
+//             divSelected[0].classList.remove('hidden');
+//             divSelected[0].classList.add('grid');
+//             break;
+//             case 3:
+//                 divSelected[1].classList.remove('hidden');
+//                 divSelected[1].classList.add('grid');
+//             break;
+//             case 5:
+//                 divSelected[2].classList.remove('hidden');
+//                 divSelected[2].classList.add('grid');
+//             break;
+//             case 7:
+//                 divSelected[3].classList.remove('hidden');
+//                 divSelected[3].classList.add('grid');
+//             break;
+//         }
+//         // divSelected[]
+//     });
+// });
 
 // --------------------------------
 

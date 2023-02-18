@@ -19,4 +19,20 @@ export default () => {
             swiper: swiperThumb,
         },
     });
+
+    const swiperSteps = new Swiper(".swiperSteps", {
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            renderBullet: function (index, className) {
+                return (
+                    '<button class="!cursor-pointer text-lg text-grey-light ' + className +
+                    '">' +
+                    "Step" +
+                    (index + 1) +
+                    "</button>"
+                );
+            },
+        },
+    });
 };

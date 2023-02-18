@@ -135,7 +135,7 @@
     </section>
     {{-- --- _____CLOSE ---------------------------------------Fiber Engineer --}}
 
-    <section id="How-work" class="flex flex-col">
+    <section id="How-work" class="flex flex-col relative">
         <h6 class="col-span-2 ml-auto lg:ml-32 text-grey-light text-xl text-right lg:!text-left px-5 pb-2">How we work?
         </h6>
         <x-steps></x-steps>
@@ -152,8 +152,8 @@
             <img src="{{ Vite::asset('resources/img/img-1.png') }}" alt="">
         </picture>
         <picture class="col-span-3 col-start-4">
-            <source media="(min-width: 1000px)" srcset="{{ Vite::asset('resources/img/how-work-img-pc.png') }}">
-            <img src="{{ Vite::asset('resources/img/img-2.png') }}" alt="">
+            <source media="(min-width: 1000px)" srcset="{{ Vite::asset('resources/img/img-4.png') }}">
+            <img width="100%" src="{{ Vite::asset('resources/img/img-2.png') }}" alt="">
         </picture>
     </section>
 
