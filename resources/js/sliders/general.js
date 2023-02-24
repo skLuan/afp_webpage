@@ -10,6 +10,14 @@ export default () => {
         slidesPerView: 4,
         centeredSlides: true,
         freeMode: false,
+        breakpoints: {
+            1000: {
+                spaceBetween: 20,
+                slidesPerView: 6,
+                direction: "vertical",
+                autoHeight: true,
+            },
+        },
     });
 
     var swiperbigThumb = new Swiper(".swiper-thumb-big", {

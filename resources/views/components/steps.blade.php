@@ -6,7 +6,7 @@
 </ul> --}}
 <div id="tabs-work" class="swiper-pagination !relative bg-grey flex flex-row justify-evenly py-2 shadow-afp">
 </div>
-<div class="swiperSteps">
+<div class="swiperSteps overflow-hidden">
     <div class="swiper-wrapper">
         {{-- -------------------------cut of divs 1 --}}
         <div class="swiper-slide">

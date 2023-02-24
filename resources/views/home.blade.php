@@ -89,9 +89,12 @@
 
     {{-- ------------------------------------------------Fiber Engineer --}}
     <section id="fiber-engineering" class="px-5 pb-32 pt-20">
-        <h2 class="lg:pl-32 uppercase text-yellow font-lemon font-medium text-4xl lg:text-5xl">Fiber <br> engineering
-        </h2>
-        <h5 class="lg:pl-32 uppercase font-lemon text-lg text-grey lg:text-2xl">Create your oun matrix</h5>
+        <x-titles.yellowPrincipal>
+            Fiber <br> engineering
+        </x-titles.yellowPrincipal>
+        <x-titles.subGrey>
+            Create your oun matrix
+        </x-titles.subGrey>
         <div class="grid grid-cols-5 lg:grid-cols-12 gap-[15px]">
             <p class="pt-5 pb-8 col-span-full lg:col-span-5 lg:col-start-2">
                 We are committed to providing our customers with the best possible service and products. offering a wide
@@ -159,26 +162,26 @@
     </section>
 
     <section id="fibers" class="mt-32">
-        <h2 class="px-5 lg:pl-32 uppercase text-yellow font-lemon font-medium text-4xl mb-5">Fibers</h2>
+                <x-titles.yellowPrincipal>Fibers </x-titles.yellowPrincipal>
         {{-- component --}}
         <x-fiber-card></x-fiber-card>
-        <h6 class="text-center text-grey-light font-normal text-lg font-jost normal-case lg:text-xl lg:mt-36">More
+        <h6 class="text-center text-grey-light opacity-30 font-normal text-lg font-jost normal-case lg:text-5xl lg:mt-32 pb-10">More
             fibers coming!</h6>
     </section>
 
     <section id="projects" class="mt-36">
         <h6 class="text-center text-grey-light font-medium text-xl mb-5">Projects with our fibers</h6>
         <x-slider.thmbnail></x-slider.thmbnail>
-        <div class="flex flex-col items-center my-20">
+        <div class="flex flex-col lg:flex-row lg:justify-center items-center my-20">
             <button
-                class="text-yellow uppercase font-bold text-sm mx-auto bg-grey shado-afp px-16 py-2 rounded-[3px]">Create
+                class="text-yellow uppercase font-bold text-sm mx-auto lg:mx-0 bg-grey shado-afp px-16 py-2 rounded-[3px]">Create
                 fibers</button>
-            <span class="py-4 font-thin text-xl">or</span>
-            <a class="mb-auto underline font-bold text-base text-grey" href="/fibers">See Armor fiber PF 54 MM</a>
+            <span class="py-4 font-thin text-xl lg:mx-20">or</span>
+            <a class="mb-auto lg:my-auto underline font-bold text-base text-grey" href="/fibers">See Armor fiber PF 54 MM</a>
         </div>
     </section>
 
-    <section id="why-us" class="grid grid-cols-5 lg:grid-cols-12 px-5 mb-32">
+    <section id="why-us" class="grid grid-cols-5 lg:grid-cols-12 lg:mt-36 px-5 mb-36">
         <h3 class="text-grey-light text-xl col-span-2 lg:col-start-2 lg:mb-5">Why us?</h3>
         <p class="col-span-4 lg:col-start-2 my-5 lg:my-0 text-base text-black leading-tight">Our team of highly trained engineers and designers
             are experts in material and slab
@@ -199,15 +202,15 @@
             </div>
             <div class="">
                 <div class="flex my-5 justify-evenly">
-                    <span class="font-normal text-sm text-black opacity-50 mr-auto lg:mr-0 lg:pr-11">Email</span><a
+                    <span class="font-normal text-base text-black opacity-50 mr-auto lg:mr-0 lg:pr-11">Email</span><a
                     href="">Mail@mail.com</a>
                 </div>
                 <div class="flex flex-row justify-evenly">
                     <span class="mr-auto lg:mr-0">
-                        <span class="block font-normal text-sm text-black opacity-50">Phone</span>
-                        <span class="block font-normal text-sm text-black opacity-50">Whatsapp</span>
+                        <span class="block font-normal text-base text-black opacity-50">Phone</span>
+                        <span class="block font-normal text-base text-black opacity-50">Whatsapp</span>
                     </span>
-                    <a href="">+1 000 0000000</a>
+                    <a class="lg:my-auto" href="">+1 000 0000000</a>
                 </div>
             </div>
         </div>

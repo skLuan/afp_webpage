@@ -15,6 +15,12 @@
     h6 {
         @apply font-lemon font-medium uppercase;
     }
+    #engineering input {
+    @apply py-2 mb-2 shadow-afp rounded-sm focus:!border-yellow focus:border-[1px] focus:bg-white-true checked:bg-black focus:shadow-btn border-none bg-white;
+    }
+    #engineering label {
+    @apply text-grey-light pl-1 border-none;
+    }
 }
 
 @layer components {
@@ -60,33 +66,34 @@
 }
 
 .swiper-thumb {
-    height: 10%;
+
     box-sizing: border-box;
-    padding: 10px 0;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .swiper-thumb .swiper-slide {
-    /* @apply lg:!w-[150px]; */
-    height: 100%;
+    @apply overflow-hidden;
     opacity: 0.4;
+
 }
 
 .swiper-thumb .swiper-slide-thumb-active {
     opacity: 1;
 }
 
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 .swiper-thumb .swiper-slide,
 .swiper-thumb .swiper-slide img {
-    @apply w-full lg:max-w-[150px] h-full lg:h-auto rounded-md;
+    @apply w-full rounded-md;
 }
+
 .swiper-thumb-big .swiper-slide img {
-    @apply w-full lg:w-1/2 h-full lg:h-1/2 rounded-md;
+    @apply w-full lg:w-full h-full lg:h-[80%] rounded-md;
     display: block;
     object-fit: cover;
 }
