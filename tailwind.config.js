@@ -21,6 +21,7 @@ module.exports = {
                 },
                 yellow: {
                     DEFAULT: "#f5a832",
+                    dark: "#a37021",
                 },
                 white: {
                     DEFAULT: "#f5f3f0",
@@ -34,7 +35,7 @@ module.exports = {
                 jost: ["Jost"],
             },
             backgroundImage: {
-                'black-concrete-1': "url('/resources/img/bg.png')",
+                "black-concrete-1": "url('/resources/img/bg.png')",
             },
             height: {
                 11: "42px",

@@ -1,7 +1,7 @@
-<section id="slider" class="swiper lg:col-span-7 h-full">
+<section id="slider" class="swiper lg:col-span-8 h-full">
     <div class="swiper-wrapper ">
         {{-- Slide --}}
-        <div class="px-5 swiper-slide bg-[url('@/img/img-hero-sm.png')] bg-cover bg-center h-full grid grid-cols-5 gap-[15px]">
+        <div class="px-5 swiper-slide bg-black bg-[url('@/img/homesmall.png')] bg-cover bg-center h-full grid grid-cols-5 gap-[15px]">
             <article class="pt-11 pb-12 text-white col-span-3 col-start-3 lg:col-span-3 lg:col-start-1">
                 <h1 class="uppercase font-lemon"><span class=" text-lg lg:text-2xl">Macrosynthetic</span> <br><span
                         class="text-5xl lg:text-7xl">fibers</span></h1>
