@@ -17,7 +17,7 @@
                     strong
                     concrete</h3>
                 <p
-                    class="hidden lg:block text-white font-normal text-lg lg:ml-auto font-jost leading-tight col-span-4 ">
+                    class="hidden lg:block text-grey-light font-normal text-lg lg:ml-auto font-jost leading-tight col-span-4 ">
                     <!-- Texto desktop -->
                     The reinforcement with discontinuous and randomly distributed fibers in the concrete matrix has as
                     its main function to control the propagation of cracks in the concrete, changing its mechanical
@@ -30,7 +30,7 @@
 
             <div class="px-5 lg:pl-0 pt-5 grid grid-cols-5 gap-[15px]">
 
-                <p class="lg:hidden font-jost text-white leading-tight pr-7 col-span-full">
+                <p class="lg:hidden font-jost text-grey-light leading-tight pr-7 col-span-full">
                     <!-- Texto mobile -->
                     The reinforcement with discontinuous and
                     randomly distributed fibers in the concrete matrix has as its main function to control the
@@ -43,7 +43,7 @@
                     <h3 class="font-lemon text-2xl text-right lg:text-left font-medium text-white lg:text-grey pb-4">
                         Service</h3>
                     <!-- Title mobile -->
-                    <p class="font-jost font-normal lg:text-lg text-white lg:text-black !leading-tight pt-0 pb-3">Our
+                    <p class="font-jost font-normal lg:text-lg text-grey-light lg:text-black !leading-tight pt-0 pb-3">Our
                         commitment is to deliver exceptional service at the
                         forefront of our operations:</p>
                 </div>
@@ -167,18 +167,18 @@
         </picture>
     </section>
 
-    <section id="fibers" class="mt-32">
-        <x-titles.yellowPrincipal>Fibers </x-titles.yellowPrincipal>
+    <section id="fibers" class="mt-32 bg-black relative pt-10 lg:py-10">
+        <x-titles.yellowPrincipal class="!text-yellow ml-32">Fibers </x-titles.yellowPrincipal>
         {{-- component --}}
         <x-fiber-card></x-fiber-card>
-        <h6
-            class="text-center text-grey-light opacity-30 font-normal text-lg font-jost normal-case lg:text-5xl lg:mt-32 pb-10">
-            More
-            fibers coming!</h6>
     </section>
+    <h6
+        class="text-center text-grey-light opacity-50 font-light text-2xl normal-case lg:text-3xl mt-10 lg:mt-24 pb-10">
+        More
+        fibers coming!</h6>
 
     <section id="projects" class="mt-36">
-        <h6 class="text-center text-grey-light font-medium text-xl mb-5">Projects with our fibers</h6>
+        <h6 class="text-center text-grey font-medium text-xl mb-5">Projects with our fibers</h6>
         <x-slider.thmbnail></x-slider.thmbnail>
         <div class="flex flex-col lg:flex-row lg:justify-center items-center my-20">
             <button
