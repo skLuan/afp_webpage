@@ -43,7 +43,8 @@
                     <h3 class="font-lemon text-2xl text-right lg:text-left font-medium text-white lg:text-grey pb-4">
                         Service</h3>
                     <!-- Title mobile -->
-                    <p class="font-jost font-normal lg:text-lg text-grey-light lg:text-black !leading-tight pt-0 pb-3">Our
+                    <p class="font-jost font-normal lg:text-lg text-grey-light lg:text-black !leading-tight pt-0 pb-3">
+                        Our
                         commitment is to deliver exceptional service at the
                         forefront of our operations:</p>
                 </div>
@@ -96,7 +97,7 @@
                     Fiber <br> engineering
                 </x-titles.yellowPrincipal>
                 <x-titles.subGrey>
-                    Create your oun matrix
+                    Create your own matriz
                 </x-titles.subGrey>
                 <p class="pt-5 pb-10 leading-tight">
                     We are committed to providing our customers with the best possible service and products. offering a
@@ -113,14 +114,16 @@
             </div>
             <picture class="col-span-full lg:col-span-6 lg:col-start-7">
                 <source media="(min-width: 1000px)" srcset="{{ Vite::asset('resources/img/en-desktop.png') }}">
-                <img class="h-full w-auto" src="{{ Vite::asset('resources/img/en-mobile.png') }}" alt="" srcset="">
+                <img class="h-full w-auto" src="{{ Vite::asset('resources/img/en-mobile.png') }}" alt=""
+                    srcset="">
             </picture>
         </div>
 
         <div class="grid grid-cols-5 lg:grid-cols-12 gap-[15px] lg:pt-16">
 
             <div class="flex flex-col col-span-5 lg:col-start-2 my-auto px-5">
-                <h4 class="my-auto py-20 lg:py-0 lg:px-10 text-xl leading-relaxed text-center normal-case font-light text-grey-light">
+                <h4
+                    class="my-auto py-20 lg:py-0 lg:px-10 text-xl leading-relaxed text-center normal-case font-light text-grey-light">
                     Leading the Market with Quality and Competitive Prices
                 </h4>
                 <a href="/engineering"
@@ -130,9 +133,8 @@
             <div class="px-5 lg:px-0 col-span-full lg:col-span-5 lg:col-start-7">
                 <h6 class="pb-4 ml-auto text-grey text-xl text-right lg:text-left">What it is?</h6>
                 <p class="pb-5 leading-tight">
-                    Macro synthetic fibers are the secret ingredient for concrete slabs that can handle the heavy loads
-                    of
-                    the construction industry.
+                    Macrosynthetic fibers are the secret ingredient for concrete slabs to withstand the design loads
+                    required on every project
                 </p>
                 <p class="col-span-full leading-tight">
                     By improving strength and ductility, these fibers can help prevent cracks and fractures from
@@ -155,8 +157,7 @@
         <x-steps></x-steps>
         <div class="col-span-full flex">
             <button
-                class="text-yellow uppercase font-bold text-sm mt-20 lg:mt-0 mx-auto bg-grey shado-afp px-16 py-2 rounded-[3px]">Create
-                fibers</button>
+                class="text-yellow uppercase font-bold text-sm mt-20 lg:mt-0 mx-5 lg:mx-auto bg-grey shado-afp px-16 py-2 rounded-[3px]">Design you own reinforcement</button>
         </div>
     </section>
 
@@ -172,8 +173,7 @@
         {{-- component --}}
         <x-fiber-card></x-fiber-card>
     </section>
-    <h6
-        class="text-center text-grey-light opacity-50 font-light text-2xl normal-case lg:text-3xl mt-10 lg:mt-24 pb-10">
+    <h6 class="text-center text-grey-light opacity-50 font-light text-2xl normal-case lg:text-3xl mt-10 lg:mt-24 pb-10">
         More
         fibers coming!</h6>
 
@@ -185,8 +185,7 @@
                 class="text-yellow uppercase font-bold text-sm mx-auto lg:mx-0 bg-grey shado-afp px-16 py-2 rounded-[3px]">Create
                 fibers</button>
             <span class="py-4 font-thin text-xl lg:mx-20">or</span>
-            <a class="mb-auto lg:my-auto underline font-bold text-base text-grey" href="/fibers">See Armor fiber PF 54
-                MM</a>
+            <a class="mb-auto lg:my-auto underline font-bold text-base text-grey" href="/fibers">See Armor fiber PF 54</a>
         </div>
     </section>
 

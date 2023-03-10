@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+    html, body {
+        scroll-behavior: smooth;
+    }
     body,
     p {
         @apply font-jost;
@@ -16,10 +19,10 @@
         @apply font-lemon font-medium uppercase;
     }
     #engineering input {
-    @apply py-2 mb-2 shadow-afp rounded-sm focus:!border-yellow focus:border-[1px] focus:bg-white-true checked:bg-black focus:shadow-btn border-none bg-white;
+        @apply py-2 mb-2 shadow-afp rounded-sm focus:!border-yellow focus:border-[1px] focus:bg-white-true checked:bg-black focus:shadow-btn border-none bg-white;
     }
     #engineering label {
-    @apply text-grey-light pl-1 border-none;
+        @apply text-grey-light pl-1 border-none;
     }
 }
 
@@ -66,7 +69,6 @@
 }
 
 .swiper-thumb {
-
     box-sizing: border-box;
 }
 
@@ -80,7 +82,6 @@
 .swiper-thumb .swiper-slide {
     @apply overflow-hidden;
     opacity: 0.4;
-
 }
 
 .swiper-thumb .swiper-slide-thumb-active {
@@ -100,7 +101,7 @@
 
 /* ------------------- Swiper steps */
 .swiper-pagination-bullet {
-@apply text-grey-light !bg-transparent !w-fit !h-full !opacity-100;
+    @apply text-grey-light !bg-transparent !w-fit !h-full !opacity-100;
 }
 
 .swiper-pagination-bullet-active {

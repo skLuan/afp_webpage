@@ -17,5 +17,11 @@ slidersGeneral();
 scrollSmooth();
 
 
-// --------------------------------
+// -------------------------------- code for sidebar
+let btnsideBar = document.getElementById('btn-sideBar');
+let sideBar = document.getElementById('sideBar');
+
+btnsideBar.addEventListener('click', (e) => {
+    sideBar.classList.toggle("-translate-x-full");
+})
 

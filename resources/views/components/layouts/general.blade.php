@@ -14,16 +14,18 @@
 </head>
 
 <body class="bg-white-bg">
-    <div class="topbar px-5 text-white bg-black flex justify-between lg:justify-end h-11 items-center lg:col-span-full">
+    <div class="topbar px-5 text-white bg-black flex lg:hidden sticky top-0 z-50 border-b border-yellow border-opacity-20 justify-between lg:justify-end h-11 items-center lg:col-span-full">
         <a href="" class="text-sm uppercase font-jost font-medium underline lg:mr-10">
             Go to Whatsapp
         </a>
         <button class="">English</button>
     </div>
+    <x-navigation.nav-bar></x-navigation.nav-bar>
     <!-- Page Content -->
     <main>
         {{ $slot }}
     </main>
+    <x-navigation.tab-bar></x-navigation.tab-bar>
     <x-footer></x-footer>
 </body>
 

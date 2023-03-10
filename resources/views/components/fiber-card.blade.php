@@ -10,12 +10,10 @@
                     <div class="h-[30px] my-auto mx-2 w-[1px] shadow-btn bg-grey"></div>
                     <h4 class="font-medium lg:my-auto capitalize font-jost text-base">Fibralared</h4>
                 </div>
-            </span> 54 <span class="font-jost ml-3 text-2xl font-light text-grey-light">MM</span></h3>
+            </span> 54</h3>
 
         <p class="leading-tight col-span-5 mt-10">
-            ARMOR FIBER PF 54, a synthetic macro fiber produced and distributed in the USA, available from American
-            Flooring Products, is an easy-to-finish, 100% virgin copolymer/polypropylene fiber. Its long-braided
-            monofilament is a unique blend of high-strength polymers....
+            ARMOR FIBER PF 54, a synthetic macrofiber, available from American Flooring Products, is an easy-to-finish 100% virgin copolymer/polypropylene fiber. Its long braided monofilament is a unique blend of high-strength polymers...
         </p>
         <div class="flex px-5 justify-around py-9 col-span-full">
             <button

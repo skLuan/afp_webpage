@@ -1,29 +1,19 @@
 export default () => {
     try {
-        const scrollToFibers = document.querySelector('a[href="#fibers"]');
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault();
 
-        scrollToFibers.addEventListener("click", (event) => {
-            // Evita que el enlace haga scroll hacia arriba por defecto
-            event.preventDefault();
-            // Encuentra el elemento con el id "fibers"
-            const target = document.querySelector("#fibers");
-            console.log(target);
-            // Usa el método scrollIntoView para hacer scroll hacia abajo hasta el elemento
-            target.scrollIntoView({ behavior: "smooth" });
-        });
+                // Obtener el destino del enlace
+                const target = document.querySelector(
+                    this.getAttribute("href")
+                );
 
-        const scrollToEngineering = document.querySelector(
-            'a[href="#fiber-engineering"]'
-        );
-
-        scrollToEngineering.addEventListener("click", (event) => {
-            // Evita que el enlace haga scroll hacia arriba por defecto
-            event.preventDefault();
-            // Encuentra el elemento con el id "fibers"
-            const target = document.querySelector("#fiber-engineering");
-            console.log(target);
-            // Usa el método scrollIntoView para hacer scroll hacia abajo hasta el elemento
-            target.scrollIntoView({ behavior: "smooth" });
+                // Hacer scroll suave hacia el destino
+                target.scrollIntoView({
+                    behavior: "smooth",
+                });
+            });
         });
     } catch (error) {}
 };

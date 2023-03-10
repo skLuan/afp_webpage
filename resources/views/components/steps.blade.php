@@ -18,14 +18,10 @@
                     <h5 class="text-white text-center pt-3">Materials</h5>
                     {{-- ----------------------- text desktop --}}
                     <p class="hidden lg:block leading-tight text-white pl-3 pr-5 pt-5">
-                        We strive for excellence by choosing only reliable and high-quality raw material suppliers
-                        to
-                        guarantee consistent product quality.
+                        We are committed to excellence in all aspects of our operations, and one way we achieve this is by carefully selecting suppliers who provide us with reliable, high-quality raw materials.
                     </p>
                     <p class="hidden lg:block leading-tight text-white pb-8 pl-3 pr-5 pt-2">
-                        Our rigorous quality systems ensure compliance with technical specifications and industry
-                        standards
-                        for superior results.
+                        In this way we are able to maintain a consistent level of product quality that meets the high standards our customers expect from us.
                     </p>
                 </div>
                 {{-- ------------------- text mobile --}}
