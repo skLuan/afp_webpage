@@ -27,9 +27,10 @@ export default () => {
             swiper: swiperThumb,
         },
     });
-
+    const steps = ['Materials', 'Design', 'Aplication', 'Follow up'];
     const swiperSteps = new Swiper(".swiperSteps", {
         loop: true,
+        autoHeight: true,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
@@ -37,8 +38,8 @@ export default () => {
                 return (
                     '<button class="!cursor-pointer text-lg text-grey-light ' + className +
                     '">' +
-                    "Step" +
-                    (index + 1) +
+                    (index+1) +" " +
+                    steps[index] +
                     "</button>"
                 );
             },

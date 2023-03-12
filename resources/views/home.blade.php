@@ -78,15 +78,6 @@
                     identify areas for improvement and stay ahead of the competition.</p>
             </div>
         </section>
-
-        {{-- ----------------- USA made --}}
-        <div id=""
-            class="usaMade flex lg:col-span-4 lg:col-start-5 shadow-afp px-5 py-4 my-20 justify-center bg-white-bg">
-            <picture class="">
-                <img src="{{ Vite::asset('resources/img/USAlogo.png') }}" alt="">
-            </picture>
-        </div>
-        {{-- CLOSE ----------------- USA made --}}
     </div>
 
     {{-- ------------------------------------------------Fiber Engineer --}}
@@ -157,7 +148,8 @@
         <x-steps></x-steps>
         <div class="col-span-full flex">
             <button
-                class="text-yellow uppercase font-bold text-sm mt-20 lg:mt-0 mx-5 lg:mx-auto bg-grey shado-afp px-16 py-2 rounded-[3px]">Design you own reinforcement</button>
+                class="text-yellow uppercase font-bold text-sm mt-20 lg:mt-0 mx-5 lg:mx-auto bg-grey shado-afp px-16 py-2 rounded-[3px]">Design
+                you own reinforcement</button>
         </div>
     </section>
 
@@ -185,7 +177,8 @@
                 class="text-yellow uppercase font-bold text-sm mx-auto lg:mx-0 bg-grey shado-afp px-16 py-2 rounded-[3px]">Create
                 fibers</button>
             <span class="py-4 font-thin text-xl lg:mx-20">or</span>
-            <a class="mb-auto lg:my-auto underline font-bold text-base text-grey" href="/fibers">See Armor fiber PF 54</a>
+            <a class="mb-auto lg:my-auto underline font-bold text-base text-grey" href="/fibers">See Armor fiber PF
+                54</a>
         </div>
     </section>
 

@@ -1,5 +1,9 @@
 @php
     $url = route('tempHome');
+    $contact = "#contact";
+    if (request()->url !== route('tempHome') || request()->url !== route('home')) {
+        $contact = route('tempHome').'#contact';
+    }
 @endphp
 <nav class="bg-black w-full sticky top-0 z-50 items-center hidden lg:flex flex-row p-5 border-b border-yellow border-opacity-20">
     <a href="{{ $url }}">
@@ -20,7 +24,7 @@
                 Armor fiber
             </a>
         </li>
-        <li class="hover:text-yellow mx-10"><a href="#contact">
+        <li class="hover:text-yellow mx-10"><a href="{{$contact}}">
                 Contact us
             </a>
         </li>
