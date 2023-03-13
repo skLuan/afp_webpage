@@ -2,6 +2,7 @@
 
 namespace App\View\Components;
 
+use App\Models\Fiber;
 use Illuminate\View\Component;
 
 class table extends Component
@@ -11,9 +12,9 @@ class table extends Component
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(public $fiber)
     {
-        //
+
     }
 
     /**

@@ -20,26 +20,14 @@
             <img src="{{ Vite::asset('resources/img/Armor-fiber.png') }}" alt="">
         </picture>
         <article class="p-5 ">
-            <p class="text-grey">ARMOR FIBER PF 54, a synthetic macro fiber produced and distributed in the USA,
-                available from American Flooring Products, is an easy-to-finish, 100% virgin copolymer/polypropylene
-                fiber. Its long-braided monofilament is a unique blend of high-strength polymers
-                <br>
-                <br>
-                It is a self-fibrillating fiber that improves the mechanical properties of concrete including: toughness
-                (energy absorption after cracking), This high strength synthetic macro fiber offers maximum long-term
-                durability, increased impact strength, fatigue resistance and resistance to plastic shrinkage cracking,
-                ARMOR FIBER PF 54, is non-corrosive, non-magnetic and 100% acid and alkali resistant. <br> <br>
-                The exceptional bond strength of ARMOR FIBERPF 54 fibers within the concrete matrix is the result of
-                their unique ability to partially fibrillate upon mixing. After mixing, each fiber transforms into a
-                fiber with fibrils at the ends that act as mechanical anchors, providing a bonding capacity that
-                optimizes the material properties of each strand and provides enhanced structural properties to the
-                concrete.
+            <p class="text-grey">
+                {!! nl2br(e($armorFiber->description)) !!}
             </p>
         </article>
     </section>
 
     <section id="tableProperties" class="px-5">
-        <x-table></x-table>
+        <x-table :fiber="$armorFiber"></x-table>
     </section>
 
     <section id="DetailsInfo" class="p-5">
