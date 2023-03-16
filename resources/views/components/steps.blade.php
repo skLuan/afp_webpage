@@ -49,7 +49,7 @@
             <div class="how-work-div grid gap-[15px] grid-cols-5 lg:grid-cols-12 bg-yellow-dark">
                 <div class="col-span-2 lg:col-span-4 lg:col-start-2 mt-8 mb-auto lg:my-auto pl-5 lg:pl-0">
                     <picture class="">
-                        <img class="mx-auto !w-[unset]" src="{{ Vite::asset('resources/img/circle-img-space.png') }}"
+                        <img class="mx-auto !w-[unset]" src="{{ Vite::asset('resources/img/icons/steps/DESIGN.svg') }}"
                             alt="">
                     </picture>
 
@@ -93,7 +93,7 @@
                 </picture>
                 <div class="col-start-4 col-span-2 lg:col-start-8 lg:col-span-4 mt-8 mb-auto lg:my-auto">
                     <picture class="">
-                        <img class="mx-auto !w-[unset]" src="{{ Vite::asset('resources/img/circle-img-space.png') }}"
+                        <img class="mx-auto !w-[unset]" src="{{ Vite::asset('resources/img/icons/steps/APLICATION.svg') }}"
                             alt="">
                     </picture>
                     <h5 class="text-white text-center pt-3">Aplication</h5>
@@ -133,7 +133,7 @@
             <div class="how-work-div grid gap-[15px] grid-cols-5 lg:grid-cols-12 bg-yellow-dark">
                 <div class="col-span-2 lg:col-span-4 lg:col-start-2 mt-8 mb-auto lg:my-auto pl-5 lg:pl-5">
                     <picture class="">
-                        <img class="mx-auto !w-[unset]" src="{{ Vite::asset('resources/img/circle-img-space.png') }}"
+                        <img class="mx-auto !w-[unset]" src="{{ Vite::asset('resources/img/icons/steps/FOLLOWUP.svg') }}"
                             alt="">
                     </picture>
                     <h5 class="text-white text-center pt-3">Follow up</h5>
