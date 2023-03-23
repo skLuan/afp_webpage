@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 @layer base {
-    html, body {
+    html,
+    body {
         scroll-behavior: smooth;
     }
     body,
@@ -18,11 +19,27 @@
     h6 {
         @apply font-lemon font-medium uppercase;
     }
-    #engineering input {
-        @apply py-2 mb-2 shadow-afp rounded-sm focus:!border-yellow focus:border-[1px] focus:bg-white-true checked:bg-black focus:shadow-btn border-none bg-white;
+    #engineering input, #engineering select {
+        @apply py-2 mb-2 shadow-afp rounded-sm border-none bg-white-true ring-transparent focus:outline-yellow;
     }
     #engineering label {
         @apply text-grey-light pl-1 border-none;
+    }
+    form#engineering input[type="checkbox"]:checked:focus, form#engineering input[type="checkbox"]:checked {
+        /* Estilos para checkbox seleccionado y enfocado */
+        @apply !bg-black;
+    }
+    form#engineering input[type="checkbox"]:focus:not(:checked) {
+        /* Estilos para checkbox enfocado pero no seleccionado */
+        @apply !bg-white-true;
+    }
+    form#engineering input[type="radio"]:checked {
+        /* Estilos para checkbox seleccionado y enfocado */
+        @apply !bg-black;
+    }
+    form#engineering input[type="radio"]:focus:not(:checked) {
+        /* Estilos para checkbox enfocado pero no seleccionado */
+        @apply !bg-white-true;
     }
 }
 
