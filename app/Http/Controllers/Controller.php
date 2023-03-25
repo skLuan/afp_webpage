@@ -18,14 +18,14 @@ class Controller extends BaseController
     public function sendBasicForm(Request $request) {
         $projectName       = $request->input('projectName');
         $ubication         = $request->input('cityEstate') == 'United States'? $request->input('state') : $request->input('country');
-        $projecDimentions = $request->input('dimentions');
-        $customerName       = $request->input('name');
-        $email            = $request->input('email');
-        $phone              = $request->input('phone');
-        $message              = $request->input('notes');
+        $projecDimentions  = $request->input('dimentions');
+        $customerName      = $request->input('name');
+        $email             = $request->input('email');
+        $phone             = $request->input('phone');
+        $msn           = $request->input('notes');
 
-        Mail::to('erazo.luan@gmail.com')->send(new ForAdmin($projectName, $ubication, $projecDimentions, $customerName, $email, $phone, $message));
-        return redirect()->back()->with('success', 'correo enviado satisfactoriamente');;
+        Mail::to('erazo.luan@gmail.com')->send(new ForAdmin($projectName, $ubication, $projecDimentions, $customerName, $email, $phone, $msn));
+        return redirect()->back()->with('success', 'correo enviado satisfactoriamente');
     }
 
     public function showHome(){

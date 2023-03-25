@@ -1,4 +1,4 @@
-        <form id="engineering" name="engine" action="sendBasicForm" onsubmit="//formGoing()"
+        <form id="engineering" name="engine" action="sendBasicForm" method="POST" onsubmit="//formGoing()"
             class="flex flex-col mx-auto py-10 px-10 lg:max-w-2xl">
             @csrf
             <x-forms.parts.gen-info></x-forms.parts.gen-info>

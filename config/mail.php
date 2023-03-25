@@ -92,7 +92,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@americanflooringproducts.com'),
+        'address' => env('MAIL_FROM_ADDRESS', 'leads@americanflooringproducts.com'),
         'name' => env('MAIL_FROM_NAME', 'AFP system'),
     ],
 

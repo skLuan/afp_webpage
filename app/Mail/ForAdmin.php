@@ -13,29 +13,29 @@ class ForAdmin extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $projectName;
-    public $ubication;
-    public $projecDimentions;
-    public $customerName;
-    public $email;
-    public $phone;
-    public $message;
+    // public $projectName;
+    // public $ubication;
+    // public $projecDimentions;
+    // public $customerName;
+    // public $email;
+    // public $phone;
+    // public $message;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($projectName, $ubication, $projecDimentions, $customerName, $email, $phone, $message)
+    public function __construct(public $projectName, public $ubication, public $projecDimentions, public $customerName, public $email, public $phone, public $msn)
     {
         //
-        $this->projectName = $projectName;
-        $this->ubication = $ubication;
-        $this->projecDimentions = $projecDimentions;
-        $this->customerName = $customerName;
-        $this->email = $email;
-        $this->phone = $phone;
-        $this->message = $message;
+        // $this->projectName = $projectName;
+        // $this->ubication = $ubication;
+        // $this->projecDimentions = $projecDimentions;
+        // $this->customerName = $customerName;
+        // $this->email = $email;
+        // $this->phone = $phone;
+        // $this->message = $message;
     }
 
     /**

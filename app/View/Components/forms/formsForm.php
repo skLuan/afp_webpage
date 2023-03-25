@@ -1,10 +1,10 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components\Forms;
 
 use Illuminate\View\Component;
 
-class forms.form extends Component
+class formsForm extends Component
 {
     /**
      * Create a new component instance.
