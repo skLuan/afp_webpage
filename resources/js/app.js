@@ -5,6 +5,7 @@ import Alpine from 'alpinejs';
 import slidersGeneral from './sliders/general';
 import scrollSmooth from './scrollSmooth';
 import "iconify-icon";
+import "./forms";
 window.Alpine = Alpine;
 Alpine.start();
 

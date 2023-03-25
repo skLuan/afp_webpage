@@ -18,7 +18,8 @@ use App\Models\Fiber;
 
 Route::get('/', [Controller::class, 'showHome'])->name('home');
 Route::redirect('/', 'maintenance');
-Route::post('/sendForm', [Controller::class, 'sendForm'])->name('sendForm');
+Route::post('/sendBasicForm', [Controller::class, 'sendBasicForm'])->name('sendBasicForm');
+// Route::post('/sendForm', [Controller::class, 'sendBasicForm'])->name('sendForm');
 
 
 Route::get('/fibers', function () {

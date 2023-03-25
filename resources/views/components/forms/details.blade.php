@@ -1,5 +1,5 @@
 <form id="engineering" name="engine" action="//javascript:;" onsubmit="//formGoing()"
-    class="flex flex-col mx-auto py-10 lg:max-w-3xl">
+    class="flex flex-col mx-auto py-10 px-10 lg:px-0 lg:max-w-3xl">
     @csrf
 
     <x-forms.parts.gen-info></x-forms.parts.gen-info>

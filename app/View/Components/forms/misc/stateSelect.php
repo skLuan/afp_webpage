@@ -4,9 +4,8 @@ namespace App\View\Components\forms\misc;
 
 use Illuminate\View\Component;
 
-class countrySelect extends Component
+class stateSelect extends Component
 {
-    public $locale;
     /**
      * Create a new component instance.
      *
@@ -14,6 +13,7 @@ class countrySelect extends Component
      */
     public function __construct()
     {
+        //
     }
 
     /**
@@ -23,6 +23,6 @@ class countrySelect extends Component
      */
     public function render()
     {
-        return view('components.forms.misc.country-select');
+        return view('components.forms.misc.state-select');
     }
 }

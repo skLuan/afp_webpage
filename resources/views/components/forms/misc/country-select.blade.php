@@ -1,5 +1,5 @@
-<label for="cityEstate" class="text-grey-light pl-1 border-none">City/Estate</label>
-<select id="cityEstate" name="cityEstate" class="py-2 mb-2 shadow-afp rounded-sm focus:!border-yellow focus:border-[1px] focus:bg-white-true focus:shadow-btn border-none bg-white">
+<label for="country" class="text-grey-light pl-1 border-none my-auto text-right">Country</label>
+<select id="cityEstate" name="country" class="py-2 mb-2 shadow-afp w-full rounded-sm focus:!border-yellow focus:border-[1px] focus:bg-white-true focus:shadow-btn border-none bg-white">
     <option>country</option>
     <option value="Afghanistan">Afghanistan</option>
     <option value="Aland Islands">Åland Islands</option>
@@ -239,7 +239,7 @@
     <option value="Ukraine">Ukraine</option>
     <option value="United Arab Emirates">United Arab Emirates</option>
     <option value="United Kingdom">United Kingdom</option>
-    <option value="United States">United States</option>
+    <option value="United States" selected >United States</option>
     <option value="United States Minor Outlying Islands">U.S. Outlying Islands</option>
     <option value="Uruguay">Uruguay</option>
     <option value="Uzbekistan">Uzbekistan</option>
