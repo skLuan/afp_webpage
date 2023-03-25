@@ -12,7 +12,7 @@
     <div class="lg:grid grid-cols-2 gap-5 mb-5">
         <x-forms.misc.country-select></x-forms.misc.country-select>
     </div>
-    <div id="selectState" class="hidden grid-cols-2 gap-5 mb-5">
+    <div class="selectState hidden grid-cols-2 gap-5 mb-5">
         <x-forms.misc.state-select></x-forms.misc.state-select>
     </div>
 

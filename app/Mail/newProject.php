@@ -18,7 +18,7 @@ class newProject extends Mailable
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(public $projectName, public $ubication, public $projecDimentions, public $customerName, public $email, public $phone, public $msn)
     {
         //
     }
@@ -43,7 +43,7 @@ class newProject extends Mailable
     public function content()
     {
         return new Content(
-            view: 'view.name',
+            view: 'mails.newProjectTemplate',
         );
     }
 

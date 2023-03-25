@@ -18,8 +18,9 @@
                 <span class="absolute right-0 pr-9 translate-y-[30%]">Kg/cm2</span>
             </div>
             <div class="flex">
-                <label class="leading-tight" for="resilianceModule">Resilience Module (Dynamic load) or type of soil</label>
-                <input class="ml-auto w-52" type="string" name="kValue" id="resilianceModule">
+                <label class="leading-tight" for="resilianceModule">Resilience Module (Dynamic load) or type of
+                    soil</label>
+                <input class="ml-auto w-52" type="string" name="resilianceModule" id="resilianceModule">
             </div>
             <div class="flex">
                 <label for="spti">SPT i (golpes/pie)</label>
@@ -28,7 +29,7 @@
             {{-- Estos dos estan acompañados de una imagen redistribuir su aspecto --}}
             <div class="flex">
                 <label for="ci">c i (Kg/cm2) =</label>
-                <input class="ml-auto w-52" type="number" name="ci" id="spti">
+                <input class="ml-auto w-52" type="number" name="ci" id="ci">
             </div>
             <div class="flex">
                 <label for="alfa">Ø i (º) =</label>
@@ -150,61 +151,10 @@
     </div>
     {{-- --------------------------------------------------------------------------------------------- --}}
 
-    <label for="inputNotes" class="text-grey-light pl-1">Notes</label>
-    <textarea
-        class="py-2 mb-2 shadow-afp rounded-sm focus:!border-yellow focus:border-[1px] focus:bg-white-true focus:shadow-btn border-none  bg-white"
-        name="notes" id="inputNotes" cols="30" rows="10"></textarea>
+    <x-forms.parts.notes></x-forms.parts.notes>
     <h3 id="formResponse" class="hidden mt-10 font-lemon text-lg text-grey">Thanks for your time! we wil reach
         soon!</h3>
     <button class="btn-sender uppercase font-bold text-yellow bg-white-true w-40 py-1 my-16 mx-auto shadow-btn rounded"
         type="submit">send</button>
+
 </form>
-{{-- <script>
-    //--------------- Form sender ajax
-    const form = document.getElementById("engineering");
-    const formButton = document.getElementById("engineering").querySelector('.btn-sender');
-
-    const formGoing = async () => {
-        console.log('iniciando el envio de email ->');
-        const inputs = document.getElementById('engineering').querySelectorAll('input');
-        const values = [];
-        // --- lectura y guaramos en js los valores
-        inputs.forEach(input => {
-            let value = input.value;
-            if (value != '') {
-                values.push(value);
-            }
-        });
-        values.push(document.getElementById('engineering').querySelector('textarea').value);
-
-        console.log(values);
-
-        // await fetch("{{ route('sendForm', []) }}", {
-        await fetch(
-            "{{ route('sendForm', ['name' => 'nombre', 'email' => 'jpMatutino@gmail.com', 'phone' => 3054396542, 'message' => 'asfjrngjrbg']) }}", {
-                method: "POST",
-                headers: {
-                    'X-CSRF-Token': '{{ csrf_token() }}',
-                },
-                body: JSON.stringify(
-                    "{'name': 'nombre', 'email': 'jpMatutino@gmail.com', 'phone': 3054396542, 'message': 'asfjrngjrbg' }"
-                ),
-            }).then((msg) => {
-            // console.log(msg);
-
-            document.getElementById('formResponse').classList.remove('hidden');
-            document.getElementById('engineering').querySelector('textarea').value = '';
-            inputs.forEach(input => {
-                input.value = '';
-            });
-
-        }).catch((err) => {
-
-        });
-    }
-    // form.setAttribute('action',formGoing)
-    // formButton.addEventListener('click', (e) => {
-    //     e.preventDefault();
-    //     console.log('yikeees!!!');
-    // });
-</script> --}}

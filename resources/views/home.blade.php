@@ -221,11 +221,20 @@
 
     <section id="contact">
         <h6 class="text-grey-light font-jost normal-case font-normal text-2xl text-center">Im interested in</h6>
-        <div class="flex bg-grey shadow-afp px-5 py-1 justify-around">
-            <span class="uppercase text-white font-bold text-lg">Engineering</span>
-            <div class="h-[17px] w-[2px] my-auto bg-grey-light"></div>
-            <span class="uppercase text-grey-light font-bold text-base">Buy Fibers</span>
+        <div id="formsContainer" class="flex bg-grey shadow-afp px-5 py-3 justify-center">
+            <span id="formSelectorEng"
+                class="cursor-pointer duration-300 uppercase text-grey-light font-bold text-base">Engineering</span>
+            <div class="h-[17px] w-[2px] my-auto bg-grey-light  mx-5"></div>
+            <span id="formSelectorArmorFiber"
+                class="cursor-pointer duration-300 uppercase text-yellow font-bold text-lg">Buy
+                Fibers</span>
         </div>
-        <x-forms.form></x-forms.form>
+        <div id="formArmorFiber" class=" formContainer">
+            <x-forms.form></x-forms.form>
+        </div>
+        </div> {{-- div nesesario funciona como un escape, hay algo mal cerrado arriba o doble cerrado --}}
+        <div id="formEngineering" class="hidden formContainer">
+            <x-forms.details></x-forms.details>
+        </div>
     </section>
 </x-layouts.general>

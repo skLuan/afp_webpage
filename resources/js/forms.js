@@ -1,22 +1,63 @@
 let formCountryState = () => {
     try {
-        let selectStates = document.getElementById("selectState");
-        let selecCountry = document.getElementById("cityEstate");
+        let selectStates = document.querySelectorAll(".selectState");
+        let selecCountries = document.querySelectorAll(".countrySelect");
 
-        if (selecCountry.value === "United States") {
-            selectStates.classList.replace("hidden", "lg:grid");
-        }
-        selecCountry.addEventListener("change", (e) => {
+        selecCountries.forEach((selecCountry,i) => {
             if (selecCountry.value === "United States") {
-                console.log(selecCountry.value);
-                selectStates.classList.replace("hidden", "lg:grid");
-            } else {
-                selectStates.classList.add("hidden");
+                selectStates[i].classList.replace("hidden", "lg:grid");
             }
+            selecCountry.addEventListener("change", (e) => {
+                if (selecCountry.value === "United States") {
+                    console.log(selecCountry.value);
+                    selectStates[i].classList.replace("hidden", "lg:grid");
+                } else {
+                    console.log(selectStates[i]);
+                    selectStates[i].classList.replace("lg:grid", "hidden");
+                }
+            });
         });
     } catch (error) {
         console.log("no hay form que modificar");
     }
 };
 
+let homeFormSelector = () => {
+    let superContainer = document.getElementById("formsContainer");
+
+    let selectorEng = document.getElementById("formSelectorEng");
+    let selectorArmorFiber = document.getElementById("formSelectorArmorFiber");
+    // --------------------- Contenedores
+    let formContainers = document.querySelectorAll(".formContainer");
+    let formContainerEngineering = document.getElementById("formEngineering");
+    let formContainerArmorFiber = document.getElementById("formArmorFiber");
+
+    superContainer.addEventListener("click", (e) => {
+        function toBase(node) {
+            node.classList.replace("text-lg", "text-base");
+            node.classList.replace("text-yellow", "text-grey-light");
+        }
+        function toSelect(node) {
+            node.classList.replace("text-base", "text-lg");
+            node.classList.replace("text-grey-light", "text-yellow");
+        }
+        if (e.target === selectorArmorFiber) {
+            toSelect(selectorArmorFiber);
+            toBase(selectorEng);
+
+            formContainerArmorFiber.classList.remove("hidden");
+            formContainerEngineering.classList.add("hidden");
+        } else if (e.target === selectorEng) {
+            toSelect(selectorEng);
+            toBase(selectorArmorFiber);
+
+            formContainerArmorFiber.classList.add("hidden");
+            formContainerEngineering.classList.remove("hidden");
+        }
+    });
+};
+
 formCountryState();
+try {
+    homeFormSelector();
+} catch (error) {}
