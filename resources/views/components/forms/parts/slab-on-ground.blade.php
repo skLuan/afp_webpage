@@ -2,11 +2,11 @@
     <label for="slapPosition">Type of Slap</label>
     <div class="">
         <label for="slapExt">External</label>
-        <input class="" id="slapExt" type="checkbox" value="External" name="slapPosition">
+        <input class="" id="slapExt" type="checkbox" value="External" name="slapPosition[]">
     </div>
     <div>
         <label class="" for="slapIn">Internal</label>
-        <input class="" id="slapIn" type="checkbox" value="Internal" name="slapPosition">
+        <input class="" id="slapIn" type="checkbox" value="Internal" name="slapPosition[]">
     </div>
 </div>
 {{-- -------------------------------------------------------------------------- --}}
@@ -14,11 +14,11 @@
     <label for="slapJoint">Slap Joints</label>
     <div class="">
         <label for="greenCut">Green Cut</label>
-        <input class="" id="greenCut" type="checkbox" value="Green cut" name="slapJoint">
+        <input class="" id="greenCut" type="checkbox" value="Green cut" name="slapJoint[]">
     </div>
     <div>
         <label class="" for="without">Without Joints</label>
-        <input class="" id="without" type="checkbox" value="Without joints" name="slapJoint">
+        <input class="" id="without" type="checkbox" value="Without joints" name="slapJoint[]">
     </div>
 </div>
 {{-- -------------------------------------------------------------------------- --}}

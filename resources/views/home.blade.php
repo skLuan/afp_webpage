@@ -195,27 +195,78 @@
             needs and effectively communicate our designs. At the forefront of innovation, we continuously research and
             develop advanced techniques and materials for slab reinforcement.</p>
 
-        <div class="col-span-3 col-start-2 lg:col-span-4 lg:col-start-5 mt-20">
+        <div class="col-span-full lg:col-span-4 lg:col-start-5 mt-20">
             <h6 class="text-grey-light font-jost normal-case font-normal text-lg text-center">Stay in contact</h6>
-            <a href="" class="text-center block underline text-grey font-bold my-5">Say hi</a>
+            <a href="https://wa.me/18132852287" class="text-center block underline text-grey font-bold my-5">Say hi</a>
             <div class="flex flex-row justify-around">
                 <a href="">
                     <iconify-icon class="text-blue-400" icon="bi:linkedin" height="24"></iconify-icon>
                 </a>
             </div>
+            {{-- ---------------------------------- Info de contacto --}}
             <div class="">
-                <div class="flex my-5 justify-evenly">
-                    <span class="font-normal text-base text-black opacity-50 mr-auto lg:mr-0 lg:pr-11">Email</span><a
-                        href="">Mail@mail.com</a>
+                <div class="flex my-5">
+                    <span class="font-normal text-base text-black opacity-50 lg:mr-0 lg:pr-11">Email</span>
+                    <div class="hidden lg:block">
+                        <a href="mailto:grover.vargas@americanflooringproducts.com"
+                            class="font-normal text-base text-black hover:text-yellow mb-2 ml-28 items-center flex flex-row">
+                            <iconify-icon class="text-2xl mr-3 opacity-25" icon="ic:outline-email"></iconify-icon>
+                            grover.vargas@<span class="opacity-40">americanflooringproducts.com</span>
+                        </a>
+                        <a href="mailto:sales@americanflooringproducts.com"
+                            class="font-normal text-base text-black hover:text-yellow mb-2 ml-28 items-center flex flex-row">
+                            <iconify-icon class="text-2xl mr-3 opacity-0" icon="ic:outline-email"></iconify-icon>
+                            sales@<span class="opacity-40">americanflooringproducts.com</span>
+                        </a>
+                        <a href="mailto:solutions@americanflooringproducts.com"
+                            class="font-normal text-base text-black hover:text-yellow mb-2 ml-28 items-center flex flex-row">
+                            <iconify-icon class="text-2xl mr-3 opacity-0" icon="ic:outline-email"></iconify-icon>
+                            solutions@<span class="opacity-40">americanflooringproducts.com</span>
+                        </a>
+                    </div>
+                    <div class="lg:hidden flex flex-col w-full">
+                        <a href="mailto:grover.vargas@americanflooringproducts.com"
+                            class="text-black hover:text-yellow ml-20 leading-tight mb-5 flex flex-col">
+                            <div class="flex flex-row">
+                                <iconify-icon class="text-2xl mr-3 opacity-25" icon="ic:outline-email"></iconify-icon>
+                                grover.vargas@
+                            </div>
+                            <br>
+                            <span class="opacity-25">americanflooringproducts.com</span>
+                        </a>
+                        <a href="mailto:sales@americanflooringproducts.com"
+                            class="text-black hover:text-yellow ml-20 leading-tight mb-5 flex flex-col">
+                            <div class="flex flex-row">
+                                <iconify-icon class="text-2xl mr-3 opacity-25" icon="ic:outline-email"></iconify-icon>
+                                sales@
+                            </div>
+                            <br>
+                            <span class="opacity-25">americanflooringproducts.com</span>
+                        </a>
+                        <a href="mailto:solutions@americanflooringproducts.com"
+                            class="text-black hover:text-yellow ml-20 leading-tight mb-5 flex flex-col">
+                            <div class="flex flex-row">
+                                <iconify-icon class="text-2xl mr-3 opacity-25" icon="ic:outline-email"></iconify-icon>
+                                solutions@
+                            </div>
+                            <br>
+                            <span class="opacity-25">americanflooringproducts.com</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="flex flex-row justify-evenly">
-                    <span class="mr-auto lg:mr-0">
-                        <span class="block font-normal text-base text-black opacity-50">Phone</span>
+                <div class="flex flex-row">
+                    <span class="lg:mr-0 ">
+                        <span class="block font-normal text-base text-black opacity-50 lg:pr-11">Phone</span>
                         <span class="block font-normal text-base text-black opacity-50">Whatsapp</span>
                     </span>
-                    <a class="lg:my-auto" href="">+1 000 0000000</a>
+                    <a href="https://wa.me/18132852287"
+                        class="font-normal text-base text-black hover:text-yellow my-2 mx-auto items-center flex flex-row">
+                        <iconify-icon class="text-2xl mr-3 opacity-25" icon="ic:baseline-whatsapp"></iconify-icon>+1
+                        (813) 285 2287
+                    </a>
                 </div>
             </div>
+            {{-- -------------------------------------------------------- Cierre --}}
         </div>
     </section>
 

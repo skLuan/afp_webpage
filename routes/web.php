@@ -19,8 +19,9 @@ use App\Models\Fiber;
 Route::get('/', [Controller::class, 'showHome'])->name('home');
 Route::redirect('/', 'maintenance');
 Route::post('/sendBasicForm', [Controller::class, 'sendBasicForm'])->name('sendBasicForm');
+Route::post('/sendProject', [Controller::class, 'sendDetailedForm'])->name('sendProjectForm');
 // Route::post('/sendForm', [Controller::class, 'sendBasicForm'])->name('sendForm');
-
+Route::get('/projectSend', [Controller::class, 'showProjectSend'])->name('projectSend');
 
 Route::get('/fibers', function () {
     $armorFiber = Fiber::first();

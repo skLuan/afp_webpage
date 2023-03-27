@@ -1,4 +1,4 @@
-<form id="engineering" name="engine" action="//javascript:;" onsubmit="//formGoing()"
+<form id="engineering" name="engine" action="sendProject" method="POST" onsubmit="//formGoing()"
     class="flex flex-col mx-auto py-10 px-10 lg:px-0 lg:max-w-3xl">
     @csrf
 
@@ -142,9 +142,9 @@
                 <span class="absolute right-0 pr-9 translate-y-[30%]">mm x mm</span>
             </div>
             <div class="flex relative !appearance-none">
-                <label class="my-auto leading-tight" for="SupportSpacing">Contact plate or supporting foot</label>
-                <input class="!appearance-none ml-auto w-52" type="number" placeholder="" name="SupportSpacing"
-                    id="SupportSpacing">
+                <label class="my-auto leading-tight" for="contactPale">Contact plate or supporting foot</label>
+                <input class="!appearance-none ml-auto w-52" type="number" placeholder="" name="contactPale"
+                    id="contactPale">
                 <span class="absolute right-0 pr-9 translate-y-[30%]">mm x mm</span>
             </div>
         </div>
