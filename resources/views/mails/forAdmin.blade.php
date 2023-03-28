@@ -8,7 +8,7 @@
         <li><b>Project name: </b>{{ $projectName }}</li>
         <li><b>Ubicación: </b>{{ $ubication }}</li>
         <li><b>Proyect dimentions in m²: </b>{{ $projecDimentions }}</li>
-        @if ($msn && !empy($msn))
+        @if ($msn && !empty($msn))
         <li><b>Mensaje: </b>{{ $msn }}</li>
         @endif
     </ul>

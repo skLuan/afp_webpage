@@ -1,7 +1,7 @@
 <x-layouts.general>
     <section id="principalInfo" class="lg:grid lg:grid-cols-12">
         <picture class="lg:col-span-7 overflow-hidden lg:pr-5">
-            <img class="w-full" src="{{ Vite::asset('resources/img/FIBERs_ARMOR.png') }}" alt="">
+            <img class="w-full" src="{{ Vite::asset('resources/img/FIBERS_ARMOR.png') }}" alt="">
         </picture>
         <div class="col-span-4 col-start-8 mt-5 px-5 lg:px-0">
             <x-titles.yellowPrincipal class="!text-yellow">Fibers </x-titles.yellowPrincipal>
