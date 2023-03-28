@@ -30,7 +30,7 @@
         </li>
     </ul>
     <div class="ml-auto text-white-bg">
-                <a href="" class="text-sm uppercase font-jost font-medium underline lg:mr-10">
+                <a href="https://wa.me/18132852287" class="hover:text-yellow text-sm uppercase font-jost font-medium underline lg:mr-10">
             Go to Whatsapp
         </a>
         <button class="">English</button>

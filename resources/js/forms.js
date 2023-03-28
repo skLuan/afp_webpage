@@ -3,7 +3,7 @@ let formCountryState = () => {
         let selectStates = document.querySelectorAll(".selectState");
         let selecCountries = document.querySelectorAll(".countrySelect");
 
-        selecCountries.forEach((selecCountry,i) => {
+        selecCountries.forEach((selecCountry, i) => {
             if (selecCountry.value === "United States") {
                 selectStates[i].classList.replace("hidden", "lg:grid");
             }
@@ -32,6 +32,7 @@ let homeFormSelector = () => {
     let formContainerEngineering = document.getElementById("formEngineering");
     let formContainerArmorFiber = document.getElementById("formArmorFiber");
 
+    // ------------------ Selector del form
     superContainer.addEventListener("click", (e) => {
         function toBase(node) {
             node.classList.replace("text-lg", "text-base");
@@ -55,9 +56,27 @@ let homeFormSelector = () => {
             formContainerEngineering.classList.remove("hidden");
         }
     });
+    // ------------------ Selector del form ------------------------------ Cierre
+};
+
+let detailedForm = () => {
+    const form = document.getElementById("engineering");
+    let selectors = form.querySelectorAll(".containerSelector");
+    let containers = form.querySelectorAll(".formContainer");
+
+    selectors.forEach((selector, i) => {
+        console.log(containers[i]);
+        selector.addEventListener('click', () => {
+            containers[i].classList.toggle('hidden',);
+            selector.classList.contains("text-grey-light")
+                ? selector.classList.replace("text-grey-light", "text-grey")
+                : selector.classList.replace("text-grey", "text-grey-light");
+        });
+    });
 };
 
 formCountryState();
 try {
     homeFormSelector();
+    detailedForm();
 } catch (error) {}

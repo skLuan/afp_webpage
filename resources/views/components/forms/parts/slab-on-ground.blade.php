@@ -1,23 +1,21 @@
-<div id="slapGround" class="flex flex-row justify-between mb-5">
-    <label for="slapPosition">Type of Slap</label>
+<div id="slapGround" class="flex lg:flex-row justify-center mb-5">
+    <label for="slapPosition" class="">Type of Slap:</label>
     <div class="">
-        <label for="slapExt">External</label>
-        <input class="" id="slapExt" type="checkbox" value="External" name="slapPosition[]">
+        <label class="!text-grey !font-medium" for="slapExt">External</label>
+        <input id="slapExt" type="checkbox" value="External" name="slapPosition[]">
     </div>
     <div>
-        <label class="" for="slapIn">Internal</label>
+        <label class="!text-grey !font-medium " for="slapIn">Internal</label>
         <input class="" id="slapIn" type="checkbox" value="Internal" name="slapPosition[]">
     </div>
 </div>
 {{-- -------------------------------------------------------------------------- --}}
-<div id="slapJoints" class="flex flex-row justify-between mb-5">
-    <label for="slapJoint">Slap Joints</label>
+<div id="slapJoints" class="flex flex-row lg:grid grid-cols-2 gap-5 justify-between mb-5">
+    <label class=" text-right" for="slapJoint">Slap Joints:</label>
     <div class="">
-        <label for="greenCut">Green Cut</label>
+        <label class="!text-grey !font-medium" for="greenCut">Green Cut</label>
         <input class="" id="greenCut" type="checkbox" value="Green cut" name="slapJoint[]">
-    </div>
-    <div>
-        <label class="" for="without">Without Joints</label>
+        <label class="!text-grey !font-medium" for="without">Without Joints</label>
         <input class="" id="without" type="checkbox" value="Without joints" name="slapJoint[]">
     </div>
 </div>
