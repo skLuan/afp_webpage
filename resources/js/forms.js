@@ -65,7 +65,6 @@ let detailedForm = () => {
     let containers = form.querySelectorAll(".formContainer");
 
     selectors.forEach((selector, i) => {
-        console.log(containers[i]);
         selector.addEventListener('click', () => {
             containers[i].classList.toggle('hidden',);
             selector.classList.contains("text-grey-light")

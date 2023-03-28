@@ -2,7 +2,7 @@
     class="containerSelector text-center my-10 text-grey-light cursor-pointer hover:text-yellow">
     {{$title}}
 </h4>
-<div id="" class="formContainer">
+<div id="" class="formContainer hidden">
 
     {{$slot}}
 

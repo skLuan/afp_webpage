@@ -280,11 +280,11 @@
                 class="cursor-pointer duration-300 uppercase text-yellow font-bold text-lg">Buy
                 Fibers</span>
         </div>
-        <div id="formArmorFiber" class="hidden formContainer">
+        <div id="formArmorFiber" class="formContainer">
             <x-forms.form></x-forms.form>
         </div>
         </div> {{-- div nesesario funciona como un escape, hay algo mal cerrado arriba o doble cerrado --}}
-        <div id="formEngineering" class="formContainer">
+        <div id="formEngineering" class="hidden formContainer">
             <x-forms.details></x-forms.details>
         </div>
     </section>
