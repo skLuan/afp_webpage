@@ -41,8 +41,8 @@ class Controller extends BaseController
             'phone'             => $request->input('phone'),
             'msn'               => $request->input('notes'),
             // ------ Information for slab on ground
-            'typeofSlap'  => implode(', ', $request->input('slapPosition')),
-            'SlapJoints'  => implode(', ', $request->input('slapJoint')),
+            'typeofSlap'  => is_array($request->input('slapPosition'))? implode(', ', $request->input('slapPosition')) : $request->input('slapPosition'),
+            'SlapJoints'  => is_array($request->input('slapJoint')) ? implode(', ', $request->input('slapJoint')): $request->input('slapJoint'),
             'joinSpacing' => $request->input('slapSpace'),
             'mxm'         => $request->input('mxm'),
             // ------ Suporting Structure

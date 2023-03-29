@@ -68,6 +68,24 @@
     $supportSpacing = $data['supportSpacing'];
     $contactPale = $data['contactPale'];
 
+    function variableExist($variable)
+    {
+        if ($variable && !empty($variable)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    function variablesExist($varArray)
+    {
+        $haveSomething = false;
+        foreach ($varArray as $var) {
+            if (variableExist($var)) {
+                $haveSomething = true;
+            }
+        }
+        return $haveSomething;
+    }
 @endphp
 <article>
     <h3>New project Lead!</h3>
@@ -79,85 +97,123 @@
         <li><b>Project name: </b>{{ $projectName }}</li>
         <li><b>Ubicación: </b>{{ $ubication }}</li>
         <li><b>Proyect dimentions in m²: </b>{{ $projecDimentions }}</li>
-        @if ($msn && !empty($msn))
+        @if (variableExist($msn))
             <li><b>Mensaje: </b>{{ $msn }}</li>
         @endif
     </ul>
 
-    <h5>Information for slab on ground</h5>
-    <ul>
-        <li><b>Type of Slap: </b>{{ $typeofSlap }}</li>
-        <li><b>Slap Joints: </b>{{ $SlapJoints}}</li>
-        <li><b>Joint Spacing: </b>{{ $joinSpacing }}</li>
-        <li><b>M x M: </b>{{ $mxm }}</li>
-    </ul>
+    @if (variablesExist([$typeofSlap, $SlapJoints, $joinSpacing]))
+        <h5>Information for slab on ground</h5>
+        <ul>
+            <li><b>Type of Slap: </b>{{ $typeofSlap }}</li>
+            <li><b>Slap Joints: </b>{{ $SlapJoints }}</li>
+            <li><b>Joint Spacing: </b>{{ $joinSpacing }}</li>
+            <li><b>M x M: </b>{{ $mxm }}</li>
+        </ul>
+    @endif
 
-    <h5>Suporting Structure</h5>
-    <ul>
-        <li><b>K-value:</b> {{ $kvalue }} Kg/cm²</li>
-        <li><b>Resilience Module: </b>{{ $resilienceModule }}</li>
-        <li><b>SPT i: </b>{{ $spt }}</li>
-        <li><b>ci (Kg/cm2): </b>{{ $ci }}</li>
-        <li><b>Ø i (º): </b>{{ $alfa }}</li>
-    </ul>
+    @if (variablesExist([$kvalue, $resilienceModule, $spt, $ci, $alfa]))
+        <h5>Suporting Structure</h5>
+        <ul>
+            <li><b>K-value:</b> {{ $kvalue }} Kg/cm²</li>
+            <li><b>Resilience Module: </b>{{ $resilienceModule }}</li>
+            <li><b>SPT i: </b>{{ $spt }}</li>
+            <li><b>ci (Kg/cm2): </b>{{ $ci }}</li>
+            <li><b>Ø i (º): </b>{{ $alfa }}</li>
+        </ul>
+    @endif
 
-    <h5>Concrete</h5>
-    <ul>
-        <li><b>Fck Cube: </b>{{ $fCube }} MR (kg/cm²)</li>
-        <li><b>Concrete Shrinkage value: </b>{{ $concreteShrinkage }} %</li>
-    </ul>
+    @if (variablesExist([$fCube, $concreteShrinkage]))
+        <h5>Concrete</h5>
+        <ul>
+            <li><b>Fck Cube: </b>{{ $fCube }} MR (kg/cm²)</li>
+            <li><b>Concrete Shrinkage value: </b>{{ $concreteShrinkage }} %</li>
+        </ul>
+    @endif
 
-    <h5>Pallet racking, Static Point load</h5>
-    <ul>
-        <li><b>Braced rack: </b>{{ $bracedRack }}</li>
-        <li><b>Support Load: </b>{{ $supportLoad }} KN</li>
-        <li><b>Back-to-back: </b>{{ $backToback }} mm</li>
-        <li><b>Rack depth: </b>{{ $rackDepth }} mm</li>
-        <li><b>Rack length: </b>{{ $rackLenght }} mm</li>
-        <li><b>Aisle width: </b>{{ $aisleWidth }} mm</li>
-        <li><b>Foot support dimensions: </b>{{ $footSupport }} mm</li>
-    </ul>
+    @if (variablesExist([$bracedRack, $supportLoad, $backToback, $rackDepth, $rackLenght, $aisleWidth, $footSupport]))
+        <h5>Pallet racking, Static Point load</h5>
+        <ul>
+            <li><b>Braced rack: </b>{{ $bracedRack }}</li>
+            <li><b>Support Load: </b>{{ $supportLoad }} KN</li>
+            <li><b>Back-to-back: </b>{{ $backToback }} mm</li>
+            <li><b>Rack depth: </b>{{ $rackDepth }} mm</li>
+            <li><b>Rack length: </b>{{ $rackLenght }} mm</li>
+            <li><b>Aisle width: </b>{{ $aisleWidth }} mm</li>
+            <li><b>Foot support dimensions: </b>{{ $footSupport }} mm</li>
+        </ul>
+    @endif
 
-    <h5>FortLift Truck - Ligth vehicle</h5>
-    <ul>
-        <li><b>Brand/model: </b>{{ $brandModel }}</li>
-        <li><b>Maximum Static Wheel Load: </b>{{ $maxStaticWheelLoad }} KN</li>
-        <li><b>Tire (inflation): </b>{{ $tirePressure }}</li>
-        <li><b>Wheel Configuration: </b>{{ $wheelConfig }}</li>
-        <li><b>Wheel Distance Sd: </b>{{ $wheelDistanceSd }} mm</li>
-        <li><b>Wheelbase sa: </b>{{ $wheelBasesa }} mm</li>
-        <li><b>Wheel type: </b>{{ $wheelType }}</li>
-    </ul>
+    @if (variablesExist([
+            $brandModel,
+            $maxStaticWheelLoad,
+            $tirePressure,
+            $wheelConfig,
+            $wheelDistanceSd,
+            $wheelBasesa,
+            $wheelType,
+        ]))
+        <h5>FortLift Truck - Ligth vehicle</h5>
+        <ul>
+            <li><b>Brand/model: </b>{{ $brandModel }}</li>
+            <li><b>Maximum Static Wheel Load: </b>{{ $maxStaticWheelLoad }} KN</li>
+            <li><b>Tire (inflation): </b>{{ $tirePressure }}</li>
+            <li><b>Wheel Configuration: </b>{{ $wheelConfig }}</li>
+            <li><b>Wheel Distance Sd: </b>{{ $wheelDistanceSd }} mm</li>
+            <li><b>Wheelbase sa: </b>{{ $wheelBasesa }} mm</li>
+            <li><b>Wheel type: </b>{{ $wheelType }}</li>
+        </ul>
+    @endif
 
-    <h5>Heavy truck</h5>
-    <ul>
-        <li><b>Maximum Static Wheel Load: </b>{{ $truckMaxStaticWheelLoad }} KN</li>
-        <li><b>Tire (inflation): </b>{{ $trucktirePressure }} MPa</li>
-        <li><b>Wheel Configuration: </b>{{ $truckwheelConfig }}</li>
-        <li><b>Wheel distance Sd: </b>{{ $truckWheelDistanceSd }} mm</li>
-        <li><b>Wheel distance S: </b>{{ $truckWheelDistanceS }} mm</li>
-        <li><b>Wheel base S1: </b>{{ $truckwheelBase1 }} mm</li>
-        <li><b>Wheel base S2: </b>{{ $truckwheelBase2 }} mm</li>
-        <li><b>Wheel base S3: </b>{{ $truckwheelBase3 }} mm</li>
-        <li><b>Wheel base S4: </b>{{ $truckwheelBase4 }} mm</li>
-        <li><b>Wheel base S5: </b>{{ $truckwheelBase5 }} mm</li>
-    </ul>
+    @if (variablesExist([
+            $truckMaxStaticWheelLoad,
+            $trucktirePressure,
+            $truckwheelConfig,
+            $truckWheelDistanceSd,
+            $truckWheelDistanceS,
+            $truckwheelBase1,
+            $truckwheelBase2,
+            $truckwheelBase3,
+            $truckwheelBase4,
+            $truckwheelBase5,
+        ]))
+        <h5>Heavy truck</h5>
+        <ul>
+            <li><b>Maximum Static Wheel Load: </b>{{ $truckMaxStaticWheelLoad }} KN</li>
+            <li><b>Tire (inflation): </b>{{ $trucktirePressure }} MPa</li>
+            <li><b>Wheel Configuration: </b>{{ $truckwheelConfig }}</li>
+            <li><b>Wheel distance Sd: </b>{{ $truckWheelDistanceSd }} mm</li>
+            <li><b>Wheel distance S: </b>{{ $truckWheelDistanceS }} mm</li>
+            <li><b>Wheel base S1: </b>{{ $truckwheelBase1 }} mm</li>
+            <li><b>Wheel base S2: </b>{{ $truckwheelBase2 }} mm</li>
+            <li><b>Wheel base S3: </b>{{ $truckwheelBase3 }} mm</li>
+            <li><b>Wheel base S4: </b>{{ $truckwheelBase4 }} mm</li>
+            <li><b>Wheel base S5: </b>{{ $truckwheelBase5 }} mm</li>
+        </ul>
+    @endif
 
-    <h5>Uniformly distributed static loads, U.D.L.</h5>
-    <ul>
-        <li><b>Load per square meter: </b> {{ $loadPerSquareMeter }} KN/m²</li>
-        <li><b>Load separation: </b> {{ $loadSeparation }} mm</li>
-    </ul>
+    @if (variablesExist([$loadPerSquareMeter, $loadSeparation]))
+        <h5>Uniformly distributed static loads, U.D.L.</h5>
+        <ul>
+            <li><b>Load per square meter: </b> {{ $loadPerSquareMeter }} KN/m²</li>
+            <li><b>Load separation: </b> {{ $loadSeparation }} mm</li>
+        </ul>
+    @endif
 
-    <h5>Linearly distributed static loads, L.D.L.</h5>
-    <ul>
-        <li><b>Load per linear meter: </b>{{ $loadPerLinearMeter }} KN/m</li>
-        <li><b>Load Width: </b>{{ $LoadWidth }} mm</li>
-    </ul>
+    @if (variablesExist([$loadPerLinearMeter, $LoadWidth]))
+        <h5>Linearly distributed static loads, L.D.L.</h5>
+        <ul>
+            <li><b>Load per linear meter: </b>{{ $loadPerLinearMeter }} KN/m</li>
+            <li><b>Load Width: </b>{{ $LoadWidth }} mm</li>
+        </ul>
+    @endif
+
+    @if (variablesExist([$mezzanineSupportLoad, $supportSpacing, $contactPale]))
     <h5>Mezzanine</h5>
     <ul>
         <li><b>Mezzanine support load: </b>{{ $mezzanineSupportLoad }}</li>
         <li><b>Support spacing: </b>{{ $supportSpacing }}</li>
         <li><b>Contact plate or supporting foot: </b>{{ $contactPale }}</li>
     </ul>
+    @endif
 </article>
