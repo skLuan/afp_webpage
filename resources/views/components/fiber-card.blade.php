@@ -16,8 +16,8 @@
             ARMOR FIBER PF 54, a synthetic macrofiber, available from American Flooring Products, is an easy-to-finish 100% virgin copolymer/polypropylene fiber. Its long braided monofilament is a unique blend of high-strength polymers...
         </p>
         <div class="flex px-5 justify-around py-9 col-span-full">
-            <button
-                class="text-black uppercase shadow-btn font-bold bg-yellow font-jost py-1 px-6 rounded-sm">buy</button>
+            <a href="#contact"
+                class="text-black uppercase shadow-btn font-bold bg-yellow font-jost py-1 px-6 rounded-sm">buy</a>
             <a href="/fibers" class="font-semibold text-lg underline text-grey-light">Read more</a>
         </div>
     </div>
