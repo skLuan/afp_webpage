@@ -65,8 +65,8 @@ let detailedForm = () => {
     let containers = form.querySelectorAll(".formContainer");
 
     selectors.forEach((selector, i) => {
-        selector.addEventListener('click', () => {
-            containers[i].classList.toggle('hidden',);
+        selector.addEventListener("click", () => {
+            containers[i].classList.toggle("hidden");
             selector.classList.contains("text-grey-light")
                 ? selector.classList.replace("text-grey-light", "text-grey")
                 : selector.classList.replace("text-grey", "text-grey-light");
@@ -77,5 +77,9 @@ let detailedForm = () => {
 formCountryState();
 try {
     homeFormSelector();
+} catch (error) {
+    console.error(error);
+}
+try {
     detailedForm();
 } catch (error) {}
