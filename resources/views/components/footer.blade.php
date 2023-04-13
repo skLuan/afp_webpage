@@ -2,7 +2,7 @@
     <div class="col-span-1 lg:col-start-2 mb-20">
         <a href="{{ route('tempHome') }}">
             <picture class="h-11">
-                <img class="h-[45%] lg:h-[unset]" src="{{ Vite::asset('resources/img/logo.png') }}" alt="Logo afp">
+                <img class="h-[30%] lg:h-[unset]" src="{{ Vite::asset('resources/img/logo.png') }}" alt="Logo afp">
             </picture>
         </a>
         <div class="flex lg:hidden flex-col mt-5 text-lg">

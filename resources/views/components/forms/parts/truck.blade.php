@@ -1,4 +1,4 @@
-<div class="grid grid-cols-2 gap-5">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
     <div>
         <picture class="bg-white-true p-3 flex">
             <img class="m-auto" src="{{ Vite::asset('resources/img/formImgs/CAMION.png') }}" alt="">

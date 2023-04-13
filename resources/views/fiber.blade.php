@@ -63,5 +63,8 @@
             </li>
         </ul>
     </section>
-
+    <section id="formFiberSection">
+        <h2 class="my-5 text-grey text-center">Talk to us for more information</h2>
+        <x-forms.form></x-forms.form>
+    </section>
 </x-layouts.general>

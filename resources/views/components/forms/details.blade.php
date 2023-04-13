@@ -8,7 +8,7 @@
 
     <x-forms.misc.container title="Information for slab on ground">
         <x-forms.parts.slab-on-ground />
-        <div class="grid grid-cols-2 gap-5">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
             <div>
                 <h5 class="text-grey-light text-center my-5">Supporting Structure</h5>
                 <div class="flex relative !appearance-none">
@@ -72,7 +72,7 @@
 
     {{-- -------------------------------------------------------- Uniformly distributed static loads, U.D.L. --}}
     <x-forms.misc.container title="Uniformly distributed static loads, U.D.L.">
-        <div class="grid grid-cols-2 gap-5">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
             <div>
                 <picture class="bg-white-true p-3 flex">
                     <img class="m-auto" src="{{ Vite::asset('resources/img/formImgs/GRAFICO1.png') }}" alt="">
@@ -96,7 +96,7 @@
     </x-forms.misc.container>
     {{-- -------------------------------------------------------- Linearly distributed static loads, L.D.L. --}}
     <x-forms.misc.container title="Linearly distributed static loads, L.D.L.">
-        <div class=" grid grid-cols-2 gap-5">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
             <div>
                 <picture class="bg-white-true p-3 flex">
                     <img class="m-auto" width="50%" src="{{ Vite::asset('resources/img/formImgs/GRAFICO2.png') }}"
@@ -122,7 +122,7 @@
 
     {{-- -------------------------------------------------------- Mezzanine --}}
     <x-forms.misc.container title="Mezzanine">
-        <div class="grid grid-cols-2 gap-5 mb-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-10">
             <div>
                 <picture class="bg-white-true p-3 flex">
                     <img class="m-auto" width="50%" src="{{ Vite::asset('resources/img/formImgs/GRAFICO3.png') }}"
