@@ -24,7 +24,6 @@ class newProject extends Mailable
 
     // // ------ Information for slab on ground
     // public $typeofSlap;
-    // public $SlapJoints;
     // // ------
     // public $joinSpacing;
     // public $mxm;
@@ -34,7 +33,6 @@ class newProject extends Mailable
     // public $resilienceModule;
     // public $spt;
     // public $ci;
-    // public $alfa;
 
     // // ------ concrete
     // public $fCube;
@@ -81,7 +79,6 @@ class newProject extends Mailable
     // // ------- Mezzanine
     // public $mezzanineSupportLoad;
     // public $supportSpacing;
-    // public $contactPale;
 
 
 

@@ -5,6 +5,7 @@
                 <img class="h-[30%] lg:h-[unset]" src="{{ Vite::asset('resources/img/logo.png') }}" alt="Logo afp">
             </picture>
         </a>
+        <span class="text-white block mt-4">14527 Mirasol Manor Ct, Tampa, FL 33626</span>
         <div class="flex lg:hidden flex-col mt-5 text-lg">
             <a href="mailto:grover.vargas@americanflooringproducts.com"
                 class="text-white hover:text-yellow ml-5 leading-tight mb-5 flex flex-col">

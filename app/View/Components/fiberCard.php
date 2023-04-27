@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class fiber-card extends Component
+class fiberCard extends Component
 {
     /**
      * Create a new component instance.

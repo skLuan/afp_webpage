@@ -10,7 +10,6 @@
 
     // ------ Information for slab on ground
     $typeofSlap = $data['typeofSlap'];
-    $SlapJoints = $data['SlapJoints'];
     $joinSpacing = $data['joinSpacing'];
     $mxm = $data['mxm'];
 
@@ -19,7 +18,6 @@
     $resilienceModule = $data['resilienceModule'];
     $spt = $data['spt'];
     $ci = $data['ci'];
-    $alfa = $data['alfa'];
 
     // ------ concrete
     $fCube = $data['fCube'];
@@ -66,7 +64,6 @@
     // ------- Mezzanine
     $mezzanineSupportLoad = $data['mezzanineSupportLoad'];
     $supportSpacing = $data['supportSpacing'];
-    $contactPale = $data['contactPale'];
 
     function variableExist($variable)
     {
@@ -102,24 +99,22 @@
         @endif
     </ul>
 
-    @if (variablesExist([$typeofSlap, $SlapJoints, $joinSpacing]))
+    @if (variablesExist([$typeofSlap, $joinSpacing]))
         <h5>Information for slab on ground</h5>
         <ul>
             <li><b>Type of Slap: </b>{{ $typeofSlap }}</li>
-            <li><b>Slap Joints: </b>{{ $SlapJoints }}</li>
             <li><b>Joint Spacing: </b>{{ $joinSpacing }}</li>
             <li><b>M x M: </b>{{ $mxm }}</li>
         </ul>
     @endif
 
-    @if (variablesExist([$kvalue, $resilienceModule, $spt, $ci, $alfa]))
+    @if (variablesExist([$kvalue, $resilienceModule, $spt, $ci]))
         <h5>Suporting Structure</h5>
         <ul>
             <li><b>K-value:</b> {{ $kvalue }} Kg/cm²</li>
             <li><b>Resilience Module: </b>{{ $resilienceModule }}</li>
             <li><b>SPT i: </b>{{ $spt }}</li>
             <li><b>ci (Kg/cm2): </b>{{ $ci }}</li>
-            <li><b>Ø i (º): </b>{{ $alfa }}</li>
         </ul>
     @endif
 
@@ -208,12 +203,11 @@
         </ul>
     @endif
 
-    @if (variablesExist([$mezzanineSupportLoad, $supportSpacing, $contactPale]))
+    @if (variablesExist([$mezzanineSupportLoad, $supportSpacing]))
     <h5>Mezzanine</h5>
     <ul>
         <li><b>Mezzanine support load: </b>{{ $mezzanineSupportLoad }}</li>
         <li><b>Support spacing: </b>{{ $supportSpacing }}</li>
-        <li><b>Contact plate or supporting foot: </b>{{ $contactPale }}</li>
     </ul>
     @endif
 </article>

@@ -1,6 +1,6 @@
-<div id="slapGround" class="flex lg:flex-row justify-center mb-5">
-    <label for="slapPosition" class="">Type of Slap:</label>
-    <div class="">
+<div id="slapGround" class="flex lg:flex-row lg:w-1/2 mb-5 pr-5">
+    <label for="slapPosition" class="">Type of Slab:</label>
+    <div class="ml-auto mr-3">
         <label class="!text-grey !font-medium" for="slapExt">External</label>
         <input id="slapExt" type="checkbox" value="External" name="slapPosition[]">
     </div>
@@ -10,33 +10,18 @@
     </div>
 </div>
 {{-- -------------------------------------------------------------------------- --}}
-<div id="slapJoints" class="flex flex-row lg:grid grid-cols-2 gap-5 justify-between mb-5">
-    <label class=" text-right" for="slapJoint">Slap Joints:</label>
-    <div class="">
-        <label class="!text-grey !font-medium" for="greenCut">Green Cut</label>
-        <input class="" id="greenCut" type="checkbox" value="Green cut" name="slapJoint[]">
-        <label class="!text-grey !font-medium" for="without">Without Joints</label>
-        <input class="" id="without" type="checkbox" value="Without joints" name="slapJoint[]">
+<div id="JointSpacing" class="lg:grid grid-cols-2 gap-5 mb-5">
+    <div class="flex">
+        <label class="" for="slapSpace">Joint Spacing:</label>
+        <select class="ml-auto" id="shortSlabs" value="Short slabs" name="slapSpace">
+            <option value="Slabs with control joints">Short slabs</option>
+            <option value="Slabs with control joints">Slabs with control joints</option>
+            <option value="Slabs without joints">Slabs without joints</option>
+        </select>
     </div>
-</div>
-{{-- -------------------------------------------------------------------------- --}}
-<h5 class="text-grey-light text-center my-5">Joint Spacing</h5>
-<div id="JointSpacing" class="flex flex-row justify-between mb-5">
-    <div class="">
-        <label for="shortSlabs">Short slabs</label>
-        <input class="" id="shortSlabs" type="radio" value="Short slabs" name="slapSpace">
+    <div class="flex relative">
+        <label class="text-center" for="mxm">mxm:</label>
+        <input class="ml-auto" type="number" name="mxm" id="mxm">
+        <span class="absolute right-0 pr-9 translate-y-[30%]">mm</span>
     </div>
-    <div>
-        <label class="" for="controlJoints">Slabs with control joints</label>
-        <input class="focus:!bg-black" id="controlJoints" type="radio" value="Slabs with control joints"
-            name="slapSpace">
-    </div>
-    <div>
-        <label class="" for="slabsWithoutJoint">Slabs without joints</label>
-        <input class="" id="slabsWithoutJoint" type="radio" value="Slabs without joints" name="slapSpace">
-    </div>
-</div>
-<div class="mx-auto mb-5">
-    <label class="block text-center" for="mxm">M x M</label>
-    <input type="number" name="mxm" id="mxm">
 </div>

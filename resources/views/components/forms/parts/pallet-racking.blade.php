@@ -4,7 +4,7 @@
     </picture>
     <div>
         <div id="" class="flex flex-row justify-between mb-5">
-            <label for="slapJoint">Braced rack</label>
+            <label for="">Braced rack</label>
             <div class="">
                 <label for="bracedrackYes">Yes</label>
                 <input class="" id="bracedrackYes" type="checkbox" value="Yes" name="bracedrack">

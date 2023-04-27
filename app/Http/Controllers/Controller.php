@@ -42,7 +42,6 @@ class Controller extends BaseController
             'msn'               => $request->input('notes'),
             // ------ Information for slab on ground
             'typeofSlap'  => is_array($request->input('slapPosition'))? implode(', ', $request->input('slapPosition')) : $request->input('slapPosition'),
-            'SlapJoints'  => is_array($request->input('slapJoint')) ? implode(', ', $request->input('slapJoint')): $request->input('slapJoint'),
             'joinSpacing' => $request->input('slapSpace'),
             'mxm'         => $request->input('mxm'),
             // ------ Suporting Structure
@@ -50,7 +49,6 @@ class Controller extends BaseController
             'resilienceModule' => $request->input('resilianceModule'),
             'spt'              => $request->input('spti'),
             'ci'               => $request->input('ci'),
-            'alfa'             => $request->input('alfa'),
             // ------ concrete
             'fCube'             => $request->input('fckCube'),
             'concreteShrinkage' => $request->input('shrinkage'),
@@ -92,7 +90,6 @@ class Controller extends BaseController
             // ------- Mezzanine
             'mezzanineSupportLoad' => $request->input('mezzanineSupport'),
             'supportSpacing'       => $request->input('SupportSpacing'),
-            'contactPale'          => $request->input('contactPale'),
         ];
         Mail::to('erazo.luan@gmail.com')->send(new newProject($data));
         return view('projectSend')->with('success', 'correo enviado satisfactoriamente');

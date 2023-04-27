@@ -13,9 +13,9 @@
                 <h5 class="text-grey-light text-center my-5">Supporting Structure</h5>
                 <div class="flex relative !appearance-none">
                     <label for="kValue">K-Value (at grade)</label>
-                    <input class="!appearance-none ml-auto w-52" type="number" placeholder="in Kg/cm2" name="kValue"
+                    <input class="!appearance-none ml-auto w-52" type="number" placeholder="" name="kValue"
                         id="kValue">
-                    <span class="absolute right-0 pr-9 translate-y-[30%]">Kg/cm2</span>
+                    <span class="absolute right-0 pr-9 translate-y-[30%]">N/mm³</span>
                 </div>
                 <div class="flex">
                     <label class="leading-tight" for="resilianceModule">Resilience Module (Dynamic load) or type of
@@ -28,12 +28,8 @@
                 </div>
                 {{-- Estos dos estan acompañados de una imagen redistribuir su aspecto --}}
                 <div class="flex">
-                    <label for="ci">c i (Kg/cm2) =</label>
+                    <label for="ci">c i (Kg/²) =</label>
                     <input class="ml-auto w-52" type="number" name="ci" id="ci">
-                </div>
-                <div class="flex">
-                    <label for="alfa">Ø i (º) =</label>
-                    <input class="ml-auto w-52" type="number" name="alfa" id="alfa">
                 </div>
             </div>
             <div>
@@ -43,10 +39,10 @@
                     <label for="fckCube">Fck Cube (Mpa)</label>
                     <input class="!appearance-none ml-auto w-52" type="number" placeholder="" name="fckCube"
                         id="fckCube">
-                    <span class="absolute right-0 pr-9 translate-y-[30%]">MR (kg/cm²)</span>
+                    <span class="absolute right-0 pr-9 translate-y-[30%]">kg/cm²</span>
                 </div>
                 <div class="flex relative !appearance-none">
-                    <label class="leading-tight" for="shrinkage">Concrete Shrinkage value:</label>
+                    <label class="leading-tight" for="shrinkage">90 day concrete shrinkage value:</label>
                     <input class="!appearance-none ml-auto w-52" type="number" placeholder="" name="shrinkage"
                         id="shrinkage">
                     <span class="absolute right-0 pr-9 translate-y-[30%]">%</span>
@@ -140,13 +136,6 @@
                     <label class="my-auto" for="SupportSpacing">Support spacing</label>
                     <input class="!appearance-none ml-auto w-52" type="number" placeholder="" name="SupportSpacing"
                         id="SupportSpacing">
-                    <span class="absolute right-0 pr-9 translate-y-[30%]">mm x mm</span>
-                </div>
-                <div class="flex relative !appearance-none">
-                    <label class="my-auto leading-tight" for="contactPale">Contact plate or
-                        supporting foot</label>
-                    <input class="!appearance-none ml-auto w-52" type="number" placeholder="" name="contactPale"
-                        id="contactPale">
                     <span class="absolute right-0 pr-9 translate-y-[30%]">mm x mm</span>
                 </div>
             </div>
