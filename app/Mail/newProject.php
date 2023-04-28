@@ -30,9 +30,6 @@ class newProject extends Mailable
 
     // // ------ Suporting Structure
     // public $kvalue;
-    // public $resilienceModule;
-    // public $spt;
-    // public $ci;
 
     // // ------ concrete
     // public $fCube;

@@ -1,22 +1,22 @@
 <div id="slapGround" class="flex lg:flex-row lg:w-1/2 mb-5 pr-5">
-    <label for="slapPosition" class="">Type of Slab:</label>
+    <label for="slapPosition" class="">{{__('Type of Slab')}}:</label>
     <div class="ml-auto mr-3">
-        <label class="!text-grey !font-medium" for="slapExt">External</label>
+        <label class="!text-grey !font-medium" for="slapExt">{{__('External')}}</label>
         <input id="slapExt" type="checkbox" value="External" name="slapPosition[]">
     </div>
     <div>
-        <label class="!text-grey !font-medium " for="slapIn">Internal</label>
+        <label class="!text-grey !font-medium " for="slapIn">{{__('Internal')}}</label>
         <input class="" id="slapIn" type="checkbox" value="Internal" name="slapPosition[]">
     </div>
 </div>
 {{-- -------------------------------------------------------------------------- --}}
 <div id="JointSpacing" class="lg:grid grid-cols-2 gap-5 mb-5">
     <div class="flex">
-        <label class="" for="slapSpace">Joint Spacing:</label>
+        <label class="" for="slapSpace">{{__('Joint Spacing')}}:</label>
         <select class="ml-auto" id="shortSlabs" value="Short slabs" name="slapSpace">
-            <option value="Slabs with control joints">Short slabs</option>
-            <option value="Slabs with control joints">Slabs with control joints</option>
-            <option value="Slabs without joints">Slabs without joints</option>
+            <option value="Slabs with control joints">{{__('Short slabs')}}</option>
+            <option value="Slabs with control joints">{{__('Slabs with control joints')}}</option>
+            <option value="Slabs without joints">{{__('Slabs without joints')}}</option>
         </select>
     </div>
     <div class="flex relative">

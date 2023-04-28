@@ -1,7 +1,7 @@
 <div id="gen-info" class="flex flex-col">
     {{-- ----------------------------- Text name --}}
     <div class="lg:grid grid-cols-2 gap-5 mb-5">
-        <label for="inputProjectName" class="text-grey-light pl-1 border-none text-right my-auto">Project name*</label>
+        <label for="inputProjectName" class="text-grey-light pl-1 border-none text-right my-auto">{{__('Project name')}}*</label>
         <input
             class="py-2 w-full mb-2 shadow-afp rounded-sm focus:!border-yellow focus:border-[1px] focus:bg-white-true focus:shadow-btn border-none bg-white"
             type="text" name="projectName" id="inputProjectName">
@@ -18,8 +18,7 @@
 
     {{-- ----------------------------- Project dimentions --}}
     <div class="lg:grid grid-cols-2 gap-5 mb-5">
-        <label for="dimentions" class="text-grey-light text-right my-auto pl-1 border-none">Proyect dimentions in
-            m²*</label>
+        <label for="dimentions" class="text-grey-light text-right my-auto pl-1 border-none">{{__('Proyect dimentions in')}} m²*</label>
         <input type="number" name="dimentions" id="dimentions"
             class="py-2 mb-2 w-full shadow-afp rounded-sm focus:!border-yellow focus:border-[1px] focus:bg-white-true focus:shadow-btn border-none bg-white">
     </div>
@@ -27,8 +26,7 @@
 
     {{-- ----------------------------- Text name --}}
     <div class="lg:grid grid-cols-2 gap-5 mb-5">
-        <label for="inputName" class="text-grey-light text-right my-auto pl-1 border-none">Customer's, company
-            name*</label>
+        <label for="inputName" class="text-grey-light text-right my-auto pl-1 border-none">{{__("Customer's/Company name")}}*</label>
         <input
             class="py-2 mb-2 w-full shadow-afp rounded-sm focus:!border-yellow focus:border-[1px] focus:bg-white-true focus:shadow-btn border-none bg-white"
             type="text" name="name" id="inputName">
@@ -44,7 +42,7 @@
     </div>
     {{-- -------------------------------------------------------------------------------------------------- END --}}
     <div class="lg:grid grid-cols-2 gap-5 mb-5">
-    <label for="inputPhone" class="text-grey-light text-right my-auto pl-1 border-none">Phone</label>
+    <label for="inputPhone" class="text-grey-light text-right my-auto pl-1 border-none">{{__('Phone')}}</label>
     <input
         class="py-2 mb-2 shadow-afp w-full rounded-sm focus:!border-yellow focus:border-[1px] focus:bg-white-true focus:shadow-btn bg-white border-none"
         type="tel" name="phone" id="inputPhone">

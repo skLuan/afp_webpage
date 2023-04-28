@@ -13,25 +13,25 @@
     </a>
     <ul class="flex flex-row text-white-bg">
         <li class="hover:text-yellow mx-14"><a href="{{$url}}">
-                Home
+                {{__('Home')}}
             </a>
         </li>
         <li class="hover:text-yellow mx-10"><a href="{{route('engineer')}}">
-                Fiber engineering
+                {{__('Fiber engineering')}}
             </a>
         </li>
         <li class="hover:text-yellow mx-10"><a href="{{route('fibers')}}">
-                Armor fiber
+                {{__('Armor fiber')}}
             </a>
         </li>
         <li class="hover:text-yellow mx-10"><a href="{{$contact}}">
-                Contact us
+            {{__('Contact us')}}
             </a>
         </li>
     </ul>
     <div class="ml-auto text-white-bg">
                 <a href="https://wa.me/18132852287" class="hover:text-yellow text-sm uppercase font-jost font-medium underline lg:mr-10">
-            Go to Whatsapp
+            {{__('Go to Whatsapp')}}
         </a>
         <button class="">English</button>
     </div>

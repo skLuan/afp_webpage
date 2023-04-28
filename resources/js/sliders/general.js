@@ -27,7 +27,17 @@ export default () => {
             swiper: swiperThumb,
         },
     });
-    const steps = ['Materials', 'Design', 'Aplication', 'Follow up'];
+    const steps = ["Materials", "Design", "Aplication", "Follow up"];
+    const stepsEs = ["Materiales", "Diseño", "Aplicación", "Seguimiento"];
+    // Obtener la URL actual
+    var currentUrl = window.location.href;
+    let theLocale = () => {
+        let st;
+        // Verificar si la URL contiene "es"
+        currentUrl.includes("/es")? st = stepsEs : st = steps;
+        return st;
+    };
+
     const swiperSteps = new Swiper(".swiperSteps", {
         loop: true,
         autoHeight: true,
@@ -36,10 +46,12 @@ export default () => {
             clickable: true,
             renderBullet: function (index, className) {
                 return (
-                    '<button class="!cursor-pointer text-lg text-grey-light ' + className +
+                    '<button class="!cursor-pointer text-lg text-grey-light ' +
+                    className +
                     '">' +
-                    (index+1) +" " +
-                    steps[index] +
+                    (index + 1) +
+                    " " +
+                    theLocale()[index] +
                     "</button>"
                 );
             },

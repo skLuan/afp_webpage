@@ -15,9 +15,6 @@
 
     // ------ Suporting Structure
     $kvalue = $data['kvalue'];
-    $resilienceModule = $data['resilienceModule'];
-    $spt = $data['spt'];
-    $ci = $data['ci'];
 
     // ------ concrete
     $fCube = $data['fCube'];
@@ -108,13 +105,10 @@
         </ul>
     @endif
 
-    @if (variablesExist([$kvalue, $resilienceModule, $spt, $ci]))
+    @if (variablesExist([$kvalue]))
         <h5>Suporting Structure</h5>
         <ul>
             <li><b>K-value:</b> {{ $kvalue }} Kg/cm²</li>
-            <li><b>Resilience Module: </b>{{ $resilienceModule }}</li>
-            <li><b>SPT i: </b>{{ $spt }}</li>
-            <li><b>ci (Kg/cm2): </b>{{ $ci }}</li>
         </ul>
     @endif
 

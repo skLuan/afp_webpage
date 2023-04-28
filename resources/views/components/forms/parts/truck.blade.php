@@ -9,19 +9,19 @@
     </div>
     <div>
         <div class="flex relative !appearance-none">
-            <label for="truckStatickWheel">Maximum Static Wheel Load</label>
+            <label for="truckStatickWheel">{{__('Maximum Static Wheel Load')}}</label>
             <input class="!appearance-none ml-auto w-52" type="number" placeholder="" name="truckStatickWheel"
                 id="truckStatickWheel">
             <span class="absolute right-0 pr-9 translate-y-[30%]">KN</span>
         </div>
         <div class="flex relative !appearance-none">
-            <label class="my-auto" for="truckTirePressure">Tire (inflation) pressure </label>
+            <label class="my-auto" for="truckTirePressure">{{__('Tire (inflation) pressure')}} </label>
             <input class="!appearance-none ml-auto w-52" type="number" placeholder="" name="truckTirePressure"
                 id="truckTirePressure">
             <span class="absolute right-0 pr-9 translate-y-[30%]">MPa</span>
         </div>
         <div id="" class="flex flex-row justify-between mb-5">
-            <label for="truckWheelConfig">Wheel Configuration</label>
+            <label for="truckWheelConfig">{{__('Wheel Configuration')}}</label>
             <div class="flex flex-col items-center">
                 <label class="" for="truckTwoWheels">
                     <picture class="mx-auto"><img class="mx-auto" width="70%"
@@ -38,20 +38,20 @@
             </div>
         </div>
         <div class="flex relative !appearance-none">
-            <label class="my-auto" for="truckWheelDistance">Wheel distance Sd =</label>
+            <label class="my-auto" for="truckWheelDistance">{{__('Wheel Distance')}} Sd =</label>
             <input class="!appearance-none ml-auto w-52" type="number" placeholder="" name="truckWheelDistance"
                 id="truckWheelDistance">
             <span class="absolute right-0 pr-9 translate-y-[30%]">mm</span>
         </div>
         <div class="flex relative !appearance-none">
-            <label class="my-auto" for="truckWheelDS">Wheel distance S =</label>
+            <label class="my-auto" for="truckWheelDS">{{__('Wheel Distance')}} S =</label>
             <input class="!appearance-none ml-auto w-52" type="number" placeholder="" name="truckWheelDS"
                 id="truckWheelDS">
             <span class="absolute right-0 pr-9 translate-y-[30%]">mm</span>
         </div>
         <div class="flex relative !appearance-none">
             <div>
-                <label class="my-auto" for="truckWheelBaseS1">Wheel base S1 =</label>
+                <label class="my-auto" for="truckWheelBaseS1">{{__('Wheelbase')}} S1 =</label>
                 <picture>
                     <img class="mx-auto" width="40%" src="{{ Vite::asset('resources/img/formImgs/EJE1.png') }}"
                         alt="">
@@ -63,7 +63,7 @@
         </div>
         <div class="flex relative !appearance-none">
             <div>
-                <label class="my-auto" for="truckWheelBaseS2">Wheel base S2 =</label>
+                <label class="my-auto" for="truckWheelBaseS2">{{__('Wheelbase')}} S2 =</label>
                 <picture>
                     <img class="mx-auto" width="40%" src="{{ Vite::asset('resources/img/formImgs/EJE2.png') }}"
                         alt="">
@@ -75,7 +75,7 @@
         </div>
         <div class="flex relative !appearance-none">
             <div>
-                <label class="my-auto" for="truckWheelBaseS3">Wheel base S3 =</label>
+                <label class="my-auto" for="truckWheelBaseS3">{{__('Wheelbase')}} S3 =</label>
                 <picture>
                     <img class="mx-auto" width="40%" src="{{ Vite::asset('resources/img/formImgs/EJE2.png') }}"
                         alt="">
@@ -87,7 +87,7 @@
         </div>
         <div class="flex relative !appearance-none">
             <div>
-                <label class="my-auto" for="truckWheelBaseS4">Wheel base S4 =</label>
+                <label class="my-auto" for="truckWheelBaseS4">{{__('Wheelbase')}} S4 =</label>
                 <picture>
                     <img class="mx-auto" width="40%" src="{{ Vite::asset('resources/img/formImgs/EJE2.png') }}"
                         alt="">
@@ -99,7 +99,7 @@
         </div>
         <div class="flex relative !appearance-none">
             <div>
-                <label class="my-auto" for="truckWheelBaseS5">Wheel base S5 =</label>
+                <label class="my-auto" for="truckWheelBaseS5">{{__('Wheelbase')}} S5 =</label>
                 <picture>
                     <img class="mx-auto" width="40%" src="{{ Vite::asset('resources/img/formImgs/EJE2.png') }}"
                         alt="">

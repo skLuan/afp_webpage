@@ -46,9 +46,6 @@ class Controller extends BaseController
             'mxm'         => $request->input('mxm'),
             // ------ Suporting Structure
             'kvalue'           => $request->input('kValue'),
-            'resilienceModule' => $request->input('resilianceModule'),
-            'spt'              => $request->input('spti'),
-            'ci'               => $request->input('ci'),
             // ------ concrete
             'fCube'             => $request->input('fckCube'),
             'concreteShrinkage' => $request->input('shrinkage'),

@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\App;
 use App\Models\Fiber;
 
 /*
@@ -23,18 +24,22 @@ Route::post('/sendProject', [Controller::class, 'sendDetailedForm'])->name('send
 // Route::post('/sendForm', [Controller::class, 'sendBasicForm'])->name('sendForm');
 Route::get('/projectSend', [Controller::class, 'showProjectSend'])->name('projectSend');
 
-Route::get('/fibers', function () {
+Route::get('/fibers/{locale?}', function ($locale = 'en') {
+    App::setLocale($locale);
     $armorFiber = Fiber::first();
     return view('fiber', ['armorFiber' => $armorFiber]);
 })->name('fibers');
 
-Route::get('/engineering', function () {
+Route::get('/engineering/{locale?}', function ($locale = 'en') {
+    App::setLocale($locale);
     return view('engineering');
 })->name('engineer');
 
-Route::get('/test', function () {
+Route::get('/test/{locale?}', function ($locale = 'en') {
+    App::setLocale($locale);
     return view('home');
 })->name('tempHome');
+
 
 Route::get('/maintenance', function () {
     return view('maintenance');
@@ -50,4 +55,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

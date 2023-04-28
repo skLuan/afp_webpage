@@ -1,4 +1,4 @@
-<label id="labelUsState" for="usEstate" class="text-grey-light pl-1 border-none my-auto text-right">Estate</label>
+<label id="labelUsState" for="usEstate" class="text-grey-light pl-1 border-none my-auto text-right">{{__('Estate')}}</label>
 <select class="py-2 w-full shadow-afp rounded-sm focus:!border-yellow focus:border-[1px] focus:bg-white-true focus:shadow-btn border-none bg-white" id="usState" name="state" size="1">
   <option value="AL">Alabama</option>
   <option value="AK">Alaska</option>

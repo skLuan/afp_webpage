@@ -9,7 +9,7 @@
                 <x-titles.yellowPrincipal class="!text-yellow">Fiber <br> engineering</x-titles.yellowPrincipal>
                 <x-titles.subGrey> Create your oun matrix</x-titles.subGrey>
             </div>
-            <x-titles.guideGrey>What it is?</x-titles.guideGrey>
+            <x-titles.guideGrey>{{__('What it is?')}}</x-titles.guideGrey>
             <p>Macro synthetic fibers are the secret ingredient for concrete slabs that can handle the heavy loads of
                 the
                 construction industry.</p>

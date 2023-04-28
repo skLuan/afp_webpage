@@ -1,6 +1,5 @@
-<label for="country" class="text-grey-light pl-1 border-none my-auto text-right">Country</label>
+<label for="country" class="text-grey-light pl-1 border-none my-auto text-right">{{__('Country')}}</label>
 <select id="cityEstate" name="country" class="countrySelect py-2 mb-2 shadow-afp w-full rounded-sm focus:!border-yellow focus:border-[1px] focus:bg-white-true focus:shadow-btn border-none bg-white">
-    <option>country</option>
     <option value="Afghanistan">Afghanistan</option>
     <option value="Aland Islands">Åland Islands</option>
     <option value="Albania">Albania</option>
