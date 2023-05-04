@@ -8,7 +8,7 @@
     <thead>
         <tr class="items-center">
             <th colspan="3" class="w-full py-2 text-center mx-auto font-semibold bg-grey rounded-sm text-white-true">
-                Physical propertires</th>
+                {{__('Physical propertires')}}</th>
         </tr>
     </thead>
     <tbody>

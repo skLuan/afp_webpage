@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Mail;
 use App\Mail\ForAdmin;
 use App\Mail\newProject;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
+
 
 class Controller extends BaseController
 {
@@ -96,8 +98,9 @@ class Controller extends BaseController
     {
         return view('projectSend');
     }
-    public function showHome()
+    public function showHome($locale)
     {
+        App::setLocale($locale);
         return view('home');
     }
 }

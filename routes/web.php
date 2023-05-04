@@ -5,6 +5,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\App;
 use App\Models\Fiber;
+use Illuminate\Support\Str;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,8 +18,8 @@ use App\Models\Fiber;
 |
 */
 
-Route::get('/', [Controller::class, 'showHome'])->name('home');
-Route::redirect('/', 'maintenance');
+Route::get('/{locale?}', [Controller::class, 'showHome'])->name('home');
+Route::redirect('/{locale?}', '/test/{locale?}');
 Route::post('/sendBasicForm', [Controller::class, 'sendBasicForm'])->name('sendBasicForm');
 Route::post('/sendProject', [Controller::class, 'sendDetailedForm'])->name('sendProjectForm');
 // Route::post('/sendForm', [Controller::class, 'sendBasicForm'])->name('sendForm');
@@ -31,9 +32,13 @@ Route::get('/fibers/{locale?}', function ($locale = 'en') {
 })->name('fibers');
 
 Route::get('/engineering/{locale?}', function ($locale = 'en') {
+    if(Str::contains(url()->previous(), 'es') && url()->previous() !== url()->route('engineer')) {
+        $locale = 'es';
+    }
     App::setLocale($locale);
     return view('engineering');
 })->name('engineer');
+
 
 Route::get('/test/{locale?}', function ($locale = 'en') {
     App::setLocale($locale);
