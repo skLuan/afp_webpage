@@ -98,8 +98,9 @@ class Controller extends BaseController
     {
         return view('projectSend');
     }
-    public function showHome($locale)
+    public function showHome($locale = 'en')
     {
+
         App::setLocale($locale);
         return view('home');
     }

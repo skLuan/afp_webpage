@@ -7,10 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
+use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
+use Astrotomic\Translatable\Translatable;
 
-class TableValue extends Model
+class TableValue extends Model implements TranslatableContract
 {
     use HasFactory;
+    use Translatable;
+    public $translatedAttributes = ['value'];
+
 
     public function tables(): BelongsToMany
     {

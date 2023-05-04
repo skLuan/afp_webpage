@@ -19,7 +19,8 @@ use Illuminate\Support\Str;
 */
 
 Route::get('/{locale?}', [Controller::class, 'showHome'])->name('home');
-Route::redirect('/{locale?}', '/test/{locale?}');
+// Route::redirect('/', '/test/{locale?}');
+Route::redirect('/{locale?}', '/test/en');
 Route::post('/sendBasicForm', [Controller::class, 'sendBasicForm'])->name('sendBasicForm');
 Route::post('/sendProject', [Controller::class, 'sendDetailedForm'])->name('sendProjectForm');
 // Route::post('/sendForm', [Controller::class, 'sendBasicForm'])->name('sendForm');
