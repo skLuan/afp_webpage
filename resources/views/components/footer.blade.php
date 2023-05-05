@@ -43,19 +43,19 @@
     </div>
     <div class="flex">
         <ul class="lg:ml-auto text-grey-light text-xl">
-            <li class="hover:text-yellow mx-5"><a href="{{ route('tempHome') }}">
+            <li class="hover:text-yellow mx-5"><a href="{{ localUrl('home') }}">
                     {{ __('Home') }}
                 </a>
             </li>
-            <li class="hover:text-yellow m-5"><a href="{{ route('engineer') }}">
+            <li class="hover:text-yellow m-5"><a href="{{ localUrl('engineer') }}">
                     {{__('Fiber engineering')}}
                 </a>
             </li>
-            <li class="hover:text-yellow m-5"><a href="{{ route('fibers') }}">
+            <li class="hover:text-yellow m-5"><a href="{{ localUrl('fibers') }}">
                     {{__('Armor fiber')}}
                 </a>
             </li>
-            <li class="hover:text-yellow m-5"><a href="#contact">
+            <li class="hover:text-yellow m-5"><a href="{{localUrl('home') . '/#contact'}}">
                     {{__('Contact us')}}
                 </a>
             </li>

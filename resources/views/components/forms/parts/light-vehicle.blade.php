@@ -16,6 +16,7 @@
         <div id="tirePressure" class="flex flex-row justify-between mb-5">
             <label class="my-auto" for="tirePressure">{{__('Tire (inflation) pressure')}}</label>
             <select class="w-52" name="tirePressure" id="tirePressure">
+                <option value="" selected disabled>{{__('choose an option')}}</option>
                 <option value="Trilateral">Trilateral</option>
                 <option value="Freight elevator">{{__('Freight elevator')}}</option>
                 <option value="V. liviano">{{__('V. light')}}</option>
@@ -52,6 +53,7 @@
         <div id="tireMaterial" class="flex flex-row justify-between mb-5">
             <label class="my-auto" for="tireMaterial">{{__('Wheel type')}}</label>
             <select class="w-52" name="tireMaterial" id="tireMaterial">
+                <option value="" selected disabled>{{__('choose an option')}}</option>
                 <option value="Neumatic">{{__('Neumatic')}}</option>
                 <option value="Gum">{{__('Gum')}}</option>
                 <option value="Metalic">{{__('Metalic')}}</option>

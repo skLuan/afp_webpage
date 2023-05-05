@@ -20,11 +20,14 @@ use Illuminate\Support\Str;
 
 Route::get('/{locale?}', [Controller::class, 'showHome'])->name('home');
 // Route::redirect('/', '/test/{locale?}');
-Route::redirect('/{locale?}', '/test/en');
 Route::post('/sendBasicForm', [Controller::class, 'sendBasicForm'])->name('sendBasicForm');
+Route::post('/fibers/sendBasicForm', [Controller::class, 'sendBasicForm']);
+
 Route::post('/sendProject', [Controller::class, 'sendDetailedForm'])->name('sendProjectForm');
+Route::post('{locale?}/sendProject', [Controller::class, 'sendDetailedForm']);
+Route::post('engineering/sendProject', [Controller::class, 'sendDetailedForm']);
 // Route::post('/sendForm', [Controller::class, 'sendBasicForm'])->name('sendForm');
-Route::get('/projectSend', [Controller::class, 'showProjectSend'])->name('projectSend');
+Route::get('/projectSend/{locale?}', [Controller::class, 'showProjectSend'])->name('projectSend');
 
 Route::get('/fibers/{locale?}', function ($locale = 'en') {
     App::setLocale($locale);

@@ -11,12 +11,14 @@ use App\Mail\ForAdmin;
 use App\Mail\newProject;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Str;
 
 
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
+    private $users = ['sales@americanflooringproducts.com', 'solutions@americanflooringproducts.com'];
 
     public function sendBasicForm(Request $request)
     {
@@ -28,7 +30,7 @@ class Controller extends BaseController
         $phone             = $request->input('phone');
         $msn           = $request->input('notes');
 
-        Mail::to('erazo.luan@gmail.com')->send(new ForAdmin($projectName, $ubication, $projecDimentions, $customerName, $email, $phone, $msn));
+        Mail::to('grover.vargas@americanflooringproducts.com')->cc($this->users)->bcc('erazo.luan@gmail.com')->send(new ForAdmin($projectName, $ubication, $projecDimentions, $customerName, $email, $phone, $msn));
         return redirect()->back()->with('success', 'correo enviado satisfactoriamente');
     }
 
@@ -90,12 +92,19 @@ class Controller extends BaseController
             'mezzanineSupportLoad' => $request->input('mezzanineSupport'),
             'supportSpacing'       => $request->input('SupportSpacing'),
         ];
-        Mail::to('erazo.luan@gmail.com')->send(new newProject($data));
-        return view('projectSend')->with('success', 'correo enviado satisfactoriamente');
+        Mail::to('grover.vargas@americanflooringproducts.com')->cc($this->users)->bcc('erazo.luan@gmail.com')->send(new newProject($data));
+        // Mail::to('erazo.luan@gmail.com')->send(new newProject($data));
+
+        $loc = app()->getLocale();
+        if (Str::contains(url()->previous(), '/es')) {
+            $loc = 'es';
+        }
+        return redirect()->route("projectSend", ['locale' => $loc])->with('success', 'correo enviado satisfactoriamente');
     }
 
-    public function showProjectSend()
+    public function showProjectSend($locale)
     {
+        App::setLocale($locale);
         return view('projectSend');
     }
     public function showHome($locale = 'en')

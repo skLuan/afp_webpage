@@ -1,15 +1,8 @@
 @php
-    $url = route('home');
-    $contact = '#contact';
-    if (request()->url !== route('tempHome') || request()->url !== route('home')) {
-        $contact = route('home') . '#contact';
-    }
     function localUrl($route)
     {
-        $current = url()->current();
         $loc = 'en';
-        if (Str::contains($current, 'es')) {
-            $url = route('home', 'es');
+        if (Str::contains(url()->current(), '/es')) {
             $loc = 'es';
         }
         return route($route, $loc);

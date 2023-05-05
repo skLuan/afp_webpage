@@ -149,8 +149,8 @@
         {{ __('More fibers coming!') }}</h6>
 
     <section id="projects" class="mt-36">
-        <h6 class="text-center text-grey font-medium text-xl mb-5">{{ __('Projects with our fibers') }}</h6>
-        <x-slider.thmbnail></x-slider.thmbnail>
+        {{-- <h6 class="text-center text-grey font-medium text-xl mb-5">{{ __('Projects with our fibers') }}</h6>
+        <x-slider.thmbnail></x-slider.thmbnail> --}}
         <div class="flex flex-col lg:flex-row lg:justify-center items-center my-20">
             <button
                 class="text-yellow uppercase font-bold text-sm mx-auto lg:mx-0 bg-grey shado-afp px-16 py-2 rounded-[3px]">{{ __('Create fibers') }}</button>
