@@ -6,15 +6,15 @@
         </picture>
     </a>
     <ul class="text-white-bg my-auto text-xl">
-        <li class="hover:text-yellow my-5"><a href="{{ localUrl('home') }}">
+        <li class="hover:text-yellow my-5"><a href="{{ localUrl('home') }}" @if (breadCrumbLink('home')) class="text-yellow"  @endif>
                 {{ __('Home') }}
             </a>
         </li>
-        <li class="hover:text-yellow my-5"><a href="{{ localUrl('engineer') }}">
+        <li class="hover:text-yellow my-5"><a href="{{ localUrl('engineer') }}" @if (breadCrumbLink('engineer')) class="text-yellow"  @endif>
                 {{ __('Fiber engineering') }}
             </a>
         </li>
-        <li class="hover:text-yellow my-5"><a href="{{ localUrl('fibers') }}">
+        <li class="hover:text-yellow my-5"><a href="{{ localUrl('fibers') }}" @if (breadCrumbLink('fibers')) class="text-yellow"  @endif>
                 {{ __('Armor fiber') }}
             </a>
         </li>

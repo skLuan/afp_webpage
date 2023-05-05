@@ -7,6 +7,9 @@
         }
         return route($route, $loc);
     }
+    function breadCrumbLink($route) {
+        return Request::url() === route($route) || Request::url() === route($route, 'es') || Request::url() === route($route, 'en');
+    };
 @endphp
 <nav
     class="bg-black w-full sticky top-0 z-50 items-center hidden lg:flex flex-row p-5 border-b border-yellow border-opacity-20">
@@ -16,15 +19,15 @@
         </picture>
     </a>
     <ul class="flex flex-row text-white-bg">
-        <li class="hover:text-yellow mx-14"><a href="{{ localUrl('home') }}">
+        <li class="hover:text-yellow mx-14"><a href="{{ localUrl('home') }}" @if (breadCrumbLink('home')) class="text-yellow"  @endif>
                 {{ __('Home') }}
             </a>
         </li>
-        <li class="hover:text-yellow mx-10"><a href="{{ localUrl('engineer') }}">
+        <li class="hover:text-yellow mx-10"><a href="{{ localUrl('engineer') }}" @if (breadCrumbLink('engineer')) class="text-yellow"  @endif>
                 {{ __('Fiber engineering') }}
             </a>
         </li>
-        <li class="hover:text-yellow mx-10"><a href="{{ localUrl('fibers') }}">
+        <li class="hover:text-yellow mx-10"><a href="{{ localUrl('fibers') }}" @if (breadCrumbLink('fibers')) class="text-yellow"  @endif>
                 {{ __('Armor fiber') }}
             </a>
         </li>
