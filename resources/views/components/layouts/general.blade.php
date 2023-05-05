@@ -14,11 +14,16 @@
 </head>
 
 <body class="bg-white-bg">
-    <div class="topbar px-5 text-white bg-black flex lg:hidden sticky top-0 z-50 border-b border-yellow border-opacity-20 justify-between lg:justify-end h-11 items-center lg:col-span-full">
+    <div
+        class="topbar px-5 text-white bg-black flex lg:hidden sticky top-0 z-50 border-b border-yellow border-opacity-20 justify-between lg:justify-end h-11 items-center lg:col-span-full">
         <a href="https://wa.me/18132852287" class="text-sm uppercase font-jost font-medium underline lg:mr-10">
             Go to Whatsapp
         </a>
-        <button class="">English</button>
+        @if (app()->getLocale() === 'es')
+            <a href="{{ route(Route::currentRouteName()) . '/en' }}" class="">English</a>
+        @else
+            <a href="{{ route(Route::currentRouteName()) . '/es' }}" class="">Español</a>
+        @endif
     </div>
     <x-navigation.nav-bar></x-navigation.nav-bar>
     <!-- Page Content -->

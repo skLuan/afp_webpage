@@ -6,20 +6,20 @@
         </picture>
     </a>
     <ul class="text-white-bg my-auto text-xl">
-        <li class="hover:text-yellow my-5"><a href="{{ route('tempHome') }}">
-                Home
+        <li class="hover:text-yellow my-5"><a href="{{ localUrl('home') }}">
+                {{ __('Home') }}
             </a>
         </li>
-        <li class="hover:text-yellow my-5"><a href="{{ route('engineer') }}">
-                Fiber engineering
+        <li class="hover:text-yellow my-5"><a href="{{ localUrl('engineer') }}">
+                {{ __('Fiber engineering') }}
             </a>
         </li>
-        <li class="hover:text-yellow my-5"><a href="{{ route('fibers') }}">
-                Armor fiber
+        <li class="hover:text-yellow my-5"><a href="{{ localUrl('fibers') }}">
+                {{ __('Armor fiber') }}
             </a>
         </li>
-        <li class="hover:text-yellow my-5"><a href="#contact">
-                Contact us
+        <li class="hover:text-yellow my-5"><a href="{{ localUrl('home') . '/#contact' }}">
+                {{ __('Contact us') }}
             </a>
         </li>
     </ul>
