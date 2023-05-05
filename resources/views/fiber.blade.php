@@ -20,7 +20,7 @@
                 <p class="text-grey">
                     {!! nl2br(e($armorFiber->description)) !!}
                 </p>
-                <a class="text-lg ml-auto underline font-medium mt-3 text-left" href="">{{__('See PDF technical data')}}</a>
+                <a class="text-lg ml-auto underline font-medium mt-3 text-left" target="_blank" href="/armorFiber_PF_54_technical_data.pdf">{{__('See PDF technical data')}}</a>
             </article>
         </div>
     </section>
