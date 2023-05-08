@@ -18,7 +18,7 @@
         <div class="flex px-5 justify-around py-9 col-span-full">
             <a href="#contact"
                 class="text-black uppercase shadow-btn font-bold bg-yellow font-jost py-1 px-6 rounded-sm">{{__('buy')}}</a>
-            <a href="/fibers" class="font-semibold text-lg underline text-grey-light">{{__('See more')}}</a>
+            <a href="{{localUrls('fibers')}}" class="font-semibold text-lg underline text-grey-light">{{__('See more')}}</a>
         </div>
     </div>
     <picture class="lg:col-span-8 lg:col-start-6 lg:absolute lg:top-0 lg:right-0 h-full">

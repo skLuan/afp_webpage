@@ -1,5 +1,14 @@
 <x-layouts.general>
-
+    @php
+        function localUrls($route)
+        {
+            $loc = 'en';
+            if (Str::contains(url()->current(), '/es')) {
+                $loc = 'es';
+            }
+            return route($route, $loc);
+        }
+    @endphp
     <div class="lg:grid lg:gap-0 lg:grid-cols-12">
         <x-slider.slider></x-slider.slider>
         {{-- -------------------------------About section --}}
@@ -102,7 +111,7 @@
                     class="my-auto py-20 lg:py-0 lg:px-10 text-xl leading-relaxed text-center normal-case font-light text-grey-light">
                     {{ __('Leading the Market with Quality and Competitive Prices') }}
                 </h4>
-                <a href="/engineering"
+                <a href="{{ localUrls('engineer') }}"
                     class="hidden lg:inline mx-auto mt-5 bg-grey-light px-8 py-[2px] rounded-sm text-xl shadow-btn text-white">{{ __('See more') }}</a>
             </div>
             <div class="px-5 lg:px-0 col-span-full lg:col-span-5 lg:col-start-7">
@@ -114,7 +123,7 @@
                     {{ __('home.whatIs2') }}
                 </p>
                 <div class="lg:hidden flex mt-10">
-                    <a href="/engineering"
+                    <a href="{{ localUrls('engineer') }}"
                         class="mx-auto bg-grey-light px-8 py-[2px] rounded-sm shadow-btn text-white">{{ __('See more') }}</a>
                 </div>
             </div>
@@ -128,8 +137,8 @@
         </h6>
         <x-steps></x-steps>
         <div class="col-span-full flex">
-            <button
-                class="text-yellow uppercase font-bold text-sm mt-20 lg:mt-0 mx-5 lg:mx-auto bg-grey shado-afp px-16 py-2 rounded-[3px]">{{ __('Design you own reinforcement') }}</button>
+            <a href="#contact"
+                class="text-yellow uppercase font-bold text-sm mt-20 lg:mt-0 mx-5 lg:mx-auto bg-grey shado-afp px-16 py-2 rounded-[3px]">{{ __('Design your own reinforcement') }}</a>
         </div>
     </section>
 
@@ -152,11 +161,11 @@
         {{-- <h6 class="text-center text-grey font-medium text-xl mb-5">{{ __('Projects with our fibers') }}</h6>
         <x-slider.thmbnail></x-slider.thmbnail> --}}
         <div class="flex flex-col lg:flex-row lg:justify-center items-center my-20">
-            <button
-                class="text-yellow uppercase font-bold text-sm mx-auto lg:mx-0 bg-grey shado-afp px-16 py-2 rounded-[3px]">{{ __('Create fibers') }}</button>
+            <a href="{{localUrls('engineer')}}"
+                class="text-yellow uppercase font-bold text-sm mx-auto lg:mx-0 bg-grey shado-afp px-16 py-2 rounded-[3px]">{{ __('Create fibers') }}</a>
             <span class="py-4 font-thin text-xl lg:mx-20">or</span>
             <a class="mb-auto lg:my-auto underline font-bold text-base text-grey"
-                href="/fibers">{{ __('See Armor fiber') }} PF 54</a>
+                href="{{localUrls('fibers')}}">{{ __('See Armor fiber') }} PF 54</a>
         </div>
     </section>
 
@@ -170,8 +179,10 @@
         </p>
 
         <div class="col-span-full lg:col-span-4 lg:col-start-5 mt-20">
-            <h6 class="text-grey-light font-jost normal-case font-normal text-lg text-center">{{__('Stay in contact')}}</h6>
-            <a href="https://wa.me/18132852287" class="text-center block underline text-grey font-bold my-5">{{__('Say hi')}}</a>
+            <h6 class="text-grey-light font-jost normal-case font-normal text-lg text-center">
+                {{ __('Stay in contact') }}</h6>
+            <a href="https://wa.me/18132852287"
+                class="text-center block underline text-grey font-bold my-5">{{ __('Say hi') }}</a>
             <div class="flex flex-row justify-around">
                 <a href="">
                     <iconify-icon class="text-blue-400" icon="bi:linkedin" height="24"></iconify-icon>
@@ -230,7 +241,8 @@
                 </div>
                 <div class="flex flex-row">
                     <span class="lg:mr-0 ">
-                        <span class="block font-normal text-base text-black opacity-50 lg:pr-11">{{__('Phone')}}</span>
+                        <span
+                            class="block font-normal text-base text-black opacity-50 lg:pr-11">{{ __('Phone') }}</span>
                         <span class="block font-normal text-base text-black opacity-50">Whatsapp</span>
                     </span>
                     <a href="https://wa.me/18132852287"
@@ -245,13 +257,14 @@
     </section>
 
     <section id="contact">
-        <h6 class="text-grey-light font-jost normal-case font-normal text-2xl text-center">{{__('Im interested in')}}</h6>
+        <h6 class="text-grey-light font-jost normal-case font-normal text-2xl text-center">
+            {{ __('Im interested in') }}</h6>
         <div id="formsContainer" class="flex bg-grey shadow-afp px-5 py-3 justify-center">
             <span id="formSelectorEng"
-                class="cursor-pointer duration-300 uppercase text-grey-light font-bold text-base">{{__('Engineering')}}</span>
+                class="cursor-pointer duration-300 uppercase text-grey-light font-bold text-base">{{ __('Engineering') }}</span>
             <div class="h-[17px] w-[2px] my-auto bg-grey-light  mx-5"></div>
             <span id="formSelectorArmorFiber"
-                class="cursor-pointer duration-300 uppercase text-yellow font-bold text-lg">{{__('Buy Fibers')}}</span>
+                class="cursor-pointer duration-300 uppercase text-yellow font-bold text-lg">{{ __('Buy Fibers') }}</span>
         </div>
         <div id="formArmorFiber" class="formContainer">
             <x-forms.form></x-forms.form>

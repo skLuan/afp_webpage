@@ -36,15 +36,17 @@
             </a>
         </li>
     </ul>
-    <div class="ml-auto text-white-bg">
-        <a href="https://wa.me/18132852287"
-            class="hover:text-yellow text-sm uppercase font-jost font-medium underline lg:mr-10">
-            {{ __('Go to Whatsapp') }}
-        </a>
+    <div class="flex flex-row ml-auto text-white-bg text-sm font-jost font-medium uppercase lg:mr-10">
+        <iconify-icon class="animate__animated animate__flash animate__repeat-3 animate__slower m-auto text-xl" icon="logos:whatsapp"></iconify-icon> <iconify-icon class="text-xl" icon="ic:round-arrow-right-alt"></iconify-icon>
+            <div class="flex flex-row">
+                <a class="mx-5 hover:text-yellow" href="https://wa.me/18132852287">Us</a>
+                <a href="https://wa.me/573178801796" class="hover:text-yellow" >Latam</a>
+            </div>
+            <div class="w-[1px] bg-white mx-5"></div>
         @if (app()->getLocale() === 'es')
-            <a href="{{ route(Route::currentRouteName()) . '/en' }}" class="">English</a>
+            <a href="{{ route(Route::currentRouteName()) . '/en' }}" class="hover:text-yellow">English</a>
         @else
-            <a href="{{ route(Route::currentRouteName()) . '/es' }}" class="">Español</a>
+            <a href="{{ route(Route::currentRouteName()) . '/es' }}" class="hover:text-yellow">Español</a>
         @endif
     </div>
 </nav>
