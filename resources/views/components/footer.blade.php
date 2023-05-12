@@ -99,20 +99,10 @@
         </a>
         {{-- -------------------------------------------------------------LATAM --}}
         <p class="text-white mx-6 text-xs mt-3 opacity-25">LATAM</p>
-        <a href="mailto:a@americanflooringproducts.com"
+        <a href="mailto:Comercial.col@americanflooringproducts.com"
             class="text-white hover:text-yellow mx-5 mb-1 items-center flex flex-row">
             <iconify-icon class="text-2xl mr-3 opacity-25" icon="ic:outline-email"></iconify-icon>
-            @<span class="opacity-40">americanflooringproducts.com</span>
-        </a>
-        <a href="mailto:sales@americanflooringproducts.com"
-            class="text-white hover:text-yellow mx-5 mb-1 items-center flex flex-row">
-            <iconify-icon class="text-2xl mr-3 opacity-0" icon="ic:outline-email"></iconify-icon>
-            @<span class="opacity-40">americanflooringproducts.com</span>
-        </a>
-        <a href="mailto:solutions@americanflooringproducts.com"
-            class="text-white hover:text-yellow mx-5 mb-1 items-center flex flex-row">
-            <iconify-icon class="text-2xl mr-3 opacity-0" icon="ic:outline-email"></iconify-icon>
-            @<span class="opacity-40">americanflooringproducts.com</span>
+            Comercial.col@<span class="opacity-40">americanflooringproducts.com</span>
         </a>
         <a href="https://wa.me/573178801796" class="text-white hover:text-yellow mx-5 my-2 items-center flex flex-row">
             <iconify-icon class="text-2xl mr-3 opacity-25" icon="ic:baseline-whatsapp"></iconify-icon>+57 (317) 880
