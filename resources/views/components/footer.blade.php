@@ -62,29 +62,11 @@
         </a>
         {{-- -------------------------------------------------------------LATAM --}}
         <p class="text-white mx-6 text-xs mt-7 opacity-25">LATAM</p>
-        <a href="mailto:grover.vargas@americanflooringproducts.com"
+        <a href="mailto:Comercial.col@americanflooringproducts.com"
             class="text-white hover:text-yellow ml-5 leading-tight mb-2 flex flex-col">
             <div class="flex flex-row">
                 <iconify-icon class="text-2xl mr-3 opacity-25" icon="ic:outline-email"></iconify-icon>
-                Latam1@
-            </div>
-            <br>
-            <span class="opacity-25">americanflooringproducts.com</span>
-        </a>
-        <a href="mailto:sales@americanflooringproducts.com"
-            class="text-white hover:text-yellow ml-5 leading-tight mb-2 flex flex-col">
-            <div class="flex flex-row">
-                <iconify-icon class="text-2xl mr-3 opacity-25" icon="ic:outline-email"></iconify-icon>
-                Latam2@
-            </div>
-            <br>
-            <span class="opacity-25">americanflooringproducts.com</span>
-        </a>
-        <a href="mailto:solutions@americanflooringproducts.com"
-            class="text-white hover:text-yellow ml-5 leading-tight mb-2 flex flex-col">
-            <div class="flex flex-row">
-                <iconify-icon class="text-2xl mr-3 opacity-25" icon="ic:outline-email"></iconify-icon>
-                Latam3@
+                Comercial.col@
             </div>
             <br>
             <span class="opacity-25">americanflooringproducts.com</span>
@@ -132,8 +114,7 @@
             <iconify-icon class="text-2xl mr-3 opacity-0" icon="ic:outline-email"></iconify-icon>
             @<span class="opacity-40">americanflooringproducts.com</span>
         </a>
-        <a href="https://wa.me/573178801796"
-            class="text-white hover:text-yellow mx-5 my-2 items-center flex flex-row">
+        <a href="https://wa.me/573178801796" class="text-white hover:text-yellow mx-5 my-2 items-center flex flex-row">
             <iconify-icon class="text-2xl mr-3 opacity-25" icon="ic:baseline-whatsapp"></iconify-icon>+57 (317) 880
             1796
         </a>
