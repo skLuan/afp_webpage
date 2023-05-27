@@ -42,7 +42,9 @@
         </div>
         <div class="flex relative !appearance-none">
             <label class="my-auto pr-3 leading-tight" for="footSuport">{{__('Foot support dimensions')}} (axb)</label>
-            <input class="!appearance-none ml-auto w-52" type="number" placeholder="" name="footSuport"
+            <input class="!appearance-none ml-auto w-[104px]" type="number" placeholder="a" name="footSuportA"
+                id="footSuport">
+            <input class="!appearance-none ml-auto w-[104px]" type="number" placeholder="b" name="footSuportB"
                 id="footSuport">
             <span class="absolute right-0 pr-9 translate-y-[30%]">mm</span>
         </div>

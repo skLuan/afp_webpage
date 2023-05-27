@@ -17,7 +17,8 @@
     $kvalue = $data['kvalue'];
 
     // ------ concrete
-    $fCube = $data['fCube'];
+    $fCube = $data['fc'];
+    $fct = $data['fct'];
     $concreteShrinkage = $data['concreteShrinkage'];
 
     // ------ Pallet racking
@@ -27,7 +28,8 @@
     $rackDepth = $data['rackDepth'];
     $rackLenght = $data['rackLenght'];
     $aisleWidth = $data['aisleWidth'];
-    $footSupport = $data['footSupport'];
+    $footSupportA = $data['footSupportA'];
+    $footSupportB = $data['footSupportB'];
 
     // ------ FortLift Truck - Ligth vehicle
     $brandModel = $data['brandModel'];
@@ -112,15 +114,16 @@
         </ul>
     @endif
 
-    @if (variablesExist([$fCube, $concreteShrinkage]))
+    @if (variablesExist([$fCube, $concreteShrinkage, $fct]))
         <h5>Concrete</h5>
         <ul>
-            <li><b>Fck Cube: </b>{{ $fCube }} MR (kg/cm²)</li>
+            <li><b>F'c: </b>{{ $fCube }} (kg/cm²)</li>
+            <li><b>Fct: </b>{{ $fct }} (kg/cm²)</li>
             <li><b>Concrete Shrinkage value: </b>{{ $concreteShrinkage }} %</li>
         </ul>
     @endif
 
-    @if (variablesExist([$bracedRack, $supportLoad, $backToback, $rackDepth, $rackLenght, $aisleWidth, $footSupport]))
+    @if (variablesExist([$bracedRack, $supportLoad, $backToback, $rackDepth, $rackLenght, $aisleWidth, $footSupportA, $footSupportB]))
         <h5>Pallet racking, Static Point load</h5>
         <ul>
             <li><b>Braced rack: </b>{{ $bracedRack }}</li>
@@ -129,7 +132,12 @@
             <li><b>Rack depth: </b>{{ $rackDepth }} mm</li>
             <li><b>Rack length: </b>{{ $rackLenght }} mm</li>
             <li><b>Aisle width: </b>{{ $aisleWidth }} mm</li>
-            <li><b>Foot support dimensions: </b>{{ $footSupport }} mm</li>
+            <li><b>Foot support Dimentions</b>
+                <br>
+                <b style="margin-left: 5px">A: </b>{{ $footSupportA }} mm
+                <br>
+                <b style="margin-left: 5px">B: </b>{{ $footSupportB }} mm
+            </li>
         </ul>
     @endif
 

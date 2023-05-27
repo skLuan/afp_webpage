@@ -51,7 +51,8 @@ class Controller extends BaseController
             // ------ Suporting Structure
             'kvalue'           => $request->input('kValue'),
             // ------ concrete
-            'fCube'             => $request->input('fckCube'),
+            'fc'             => $request->input('fckCube'),
+            'fct'             => $request->input('fct'),
             'concreteShrinkage' => $request->input('shrinkage'),
             // ------ Pallet racking
             'bracedRack'  => $request->input('bracedrack'),
@@ -60,7 +61,8 @@ class Controller extends BaseController
             'rackDepth'   => $request->input('xx'),
             'rackLenght'  => $request->input('yy'),
             'aisleWidth'  => $request->input('aisle'),
-            'footSupport' => $request->input('footSuport'),
+            'footSupportA' => $request->input('footSuportA'),
+            'footSupportB' => $request->input('footSuportB'),
             // ------ FortLift Truck - Ligth vehicle
             'brandModel'         => $request->input('brand'),
             'maxStaticWheelLoad' => $request->input('staticWheel'),
@@ -92,8 +94,8 @@ class Controller extends BaseController
             'mezzanineSupportLoad' => $request->input('mezzanineSupport'),
             'supportSpacing'       => $request->input('SupportSpacing'),
         ];
-        Mail::to('grover.vargas@americanflooringproducts.com')->cc($this->users)->bcc('erazo.luan@gmail.com')->send(new newProject($data));
-        // Mail::to('erazo.luan@gmail.com')->send(new newProject($data));
+        // Mail::to('grover.vargas@americanflooringproducts.com')->cc($this->users)->bcc('erazo.luan@gmail.com')->send(new newProject($data));
+        Mail::to('erazo.luan@gmail.com')->send(new newProject($data));
 
         $loc = app()->getLocale();
         if (Str::contains(url()->previous(), '/es')) {

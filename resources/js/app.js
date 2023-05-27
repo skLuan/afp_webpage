@@ -26,11 +26,12 @@ let btnsideBar = document.getElementById('btn-sideBar');
 let sideBar = document.getElementById('sideBar');
 // Función para cerrar el sidebar
 const closeSideBar = () => {
-  sideBar.classList.toggle("-translate-x-full");
+  sideBar.classList.add("-translate-x-full");
 };
 
 doc.addEventListener("click", (event) => {
     // Verificamos si el clic fue dentro del sidebar o en el botón de toggle
+    if(sideBar.classList.contains("-translate-x-full")) return;
     const isClickInsideSideBar = sideBar.contains(event.target);
     const isClickOnToggleBtn = event.target === btnsideBar;
 

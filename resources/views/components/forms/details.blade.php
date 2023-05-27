@@ -24,13 +24,19 @@
                 {{-- --------------------------------------------- Concrete --}}
                 <h5 class="text-grey-light text-center my-5">{{__('Concrete')}}</h5>
                 <div class="flex relative !appearance-none">
-                    <label for="fckCube">Fck Cube (Mpa)</label>
+                    <label for="fckCube">F'c</label>
                     <input class="!appearance-none ml-auto w-52" type="number" placeholder="" name="fckCube"
                         id="fckCube">
                     <span class="absolute right-0 pr-9 translate-y-[30%]">kg/cm²</span>
                 </div>
                 <div class="flex relative !appearance-none">
-                    <label class="leading-tight" for="shrinkage">{{__('90 day concrete shrinkage value')}}:</label>
+                    <label for="fct">Fct</label>
+                    <input class="!appearance-none ml-auto w-52" type="number" placeholder="" name="fct"
+                        id="fct">
+                    <span class="absolute right-0 pr-9 translate-y-[30%]">kg/cm²</span>
+                </div>
+                <div class="flex relative !appearance-none">
+                    <label class="leading-tight" for="shrinkage">{{__('90 days concrete shrinkage value')}}:</label>
                     <input class="!appearance-none ml-auto w-52" type="number" placeholder="" name="shrinkage"
                         id="shrinkage">
                     <span class="absolute right-0 pr-9 translate-y-[30%]">%</span>
