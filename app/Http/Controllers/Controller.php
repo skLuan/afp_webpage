@@ -94,8 +94,8 @@ class Controller extends BaseController
             'mezzanineSupportLoad' => $request->input('mezzanineSupport'),
             'supportSpacing'       => $request->input('SupportSpacing'),
         ];
-        // Mail::to('grover.vargas@americanflooringproducts.com')->cc($this->users)->bcc('erazo.luan@gmail.com')->send(new newProject($data));
-        Mail::to('erazo.luan@gmail.com')->send(new newProject($data));
+        Mail::to('grover.vargas@americanflooringproducts.com')->cc($this->users)->bcc('erazo.luan@gmail.com')->send(new newProject($data));
+        // Mail::to('erazo.luan@gmail.com')->send(new newProject($data));
 
         $loc = app()->getLocale();
         if (Str::contains(url()->previous(), '/es')) {
