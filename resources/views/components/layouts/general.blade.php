@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Concrete fibers AFP</title>
-
     <!-- Fonts -->
     {{-- <link rel="stylesheet" href="/resources/css/fonts.css"> --}}
     <!-- Scripts -->
@@ -37,6 +36,7 @@
     </main>
     <x-navigation.tab-bar></x-navigation.tab-bar>
     <x-footer></x-footer>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 
 </html>

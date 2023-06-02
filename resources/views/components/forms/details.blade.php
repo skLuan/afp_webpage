@@ -30,7 +30,7 @@
                     <span class="absolute right-0 pr-9 translate-y-[30%]">kg/cm²</span>
                 </div>
                 <div class="flex relative !appearance-none">
-                    <label for="fct">Fct</label>
+                    <label for="fct">F'ct</label>
                     <input class="!appearance-none ml-auto w-52" type="number" placeholder="" name="fct"
                         id="fct">
                     <span class="absolute right-0 pr-9 translate-y-[30%]">kg/cm²</span>
@@ -139,6 +139,8 @@
     {{-- --------------------------------------------------------------------------------------------- --}}
 
     <x-forms.parts.notes></x-forms.parts.notes>
+    <div class="g-recaptcha" data-sitekey="6LdZHV0mAAAAAIBLyjqCdsZuHrNuzy82wuAfaFNX"></div>
+
     <h3 id="formResponse" class="hidden mt-10 font-lemon text-lg text-grey">{{__('Thanks for your time! we wil reach soon!')}}</h3>
     <button class="btn-sender uppercase font-bold text-yellow bg-white-true w-40 py-1 my-16 mx-auto shadow-btn rounded"
         type="submit">{{__('Send')}}</button>

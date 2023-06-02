@@ -1,4 +1,5 @@
 import.meta.glob(["../fonts/**", "../img/**"]);
+// import 'https://www.google.com/recaptcha/api.js';
 import './bootstrap';
 import Alpine from 'alpinejs';
   // import Swiper bundle with all modules installed  // import styles bundle
