@@ -1,18 +1,18 @@
 <form id="engineering" name="engine" action="sendProject" method="POST" onsubmit="//formGoing()"
-    class="flex flex-col mx-auto py-10 px-5 lg:px-0 lg:max-w-3xl">
+    class="flex flex-col px-5 py-10 mx-auto lg:px-0 lg:max-w-3xl">
     @csrf
-    <h4 class="text-center my-5 text-grey">{{ __('General Information') }}</h4>
+    <h4 class="my-5 text-center text-grey">{{ __('General Information') }}</h4>
     <x-forms.parts.gen-info></x-forms.parts.gen-info>
 
-    <p class="text-xl leading-tight text-center my-10 text-grey-light font-medium">
+    <p class="my-10 text-xl font-medium leading-tight text-center text-grey-light">
         {{ __('Feel free to give us the information you have, but the more we have, the most relatiable we can be') }}
     </p>
 
     <x-forms.misc.container title="{{ __('Information for slab on ground') }}">
         <x-forms.parts.slab-on-ground />
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        <div class="grid grid-cols-1 gap-5 lg:grid-cols-2">
             <div>
-                <h5 class="text-grey-light text-center my-5">{{ __('Supporting Structure') }}</h5>
+                <h5 class="my-5 text-center text-grey-light">{{ __('Supporting Structure') }}</h5>
                 <div class="flex relative !appearance-none">
                     <label for="kValue">K-Value (at grade)</label>
                     <input class="!appearance-none ml-auto w-52" type="number" placeholder="" name="kValue"
@@ -22,7 +22,7 @@
             </div>
             <div>
                 {{-- --------------------------------------------- Concrete --}}
-                <h5 class="text-grey-light text-center my-5">{{__('Concrete')}}</h5>
+                <h5 class="my-5 text-center text-grey-light">{{__('Concrete')}}</h5>
                 <div class="flex relative !appearance-none">
                     <label for="fckCube">F'c</label>
                     <input class="!appearance-none ml-auto w-52" type="number" placeholder="" name="fckCube"
@@ -62,9 +62,9 @@
 
     {{-- -------------------------------------------------------- Uniformly distributed static loads, U.D.L. --}}
     <x-forms.misc.container title="{{__('Uniformly distributed static loads')}}, U.D.L.">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        <div class="grid grid-cols-1 gap-5 lg:grid-cols-2">
             <div>
-                <picture class="bg-white-true p-3 flex">
+                <picture class="flex p-3 bg-white-true">
                     <img class="m-auto" src="{{ Vite::asset('resources/img/formImgs/GRAFICO1.png') }}" alt="">
                 </picture>
             </div>
@@ -86,9 +86,9 @@
     </x-forms.misc.container>
     {{-- -------------------------------------------------------- Linearly distributed static loads, L.D.L. --}}
     <x-forms.misc.container title="{{__('Linearly distributed static loads')}}, L.D.L.">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        <div class="grid grid-cols-1 gap-5 lg:grid-cols-2">
             <div>
-                <picture class="bg-white-true p-3 flex">
+                <picture class="flex p-3 bg-white-true">
                     <img class="m-auto" width="50%" src="{{ Vite::asset('resources/img/formImgs/GRAFICO2.png') }}"
                         alt="">
                 </picture>
@@ -112,9 +112,9 @@
 
     {{-- -------------------------------------------------------- Mezzanine --}}
     <x-forms.misc.container title="{{__('Mezzanine')}}">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-10">
+        <div class="grid grid-cols-1 gap-5 mb-10 lg:grid-cols-2">
             <div>
-                <picture class="bg-white-true p-3 flex">
+                <picture class="flex p-3 bg-white-true">
                     <img class="m-auto" width="50%" src="{{ Vite::asset('resources/img/formImgs/GRAFICO3.png') }}"
                         alt="">
                 </picture>
@@ -139,10 +139,10 @@
     {{-- --------------------------------------------------------------------------------------------- --}}
 
     <x-forms.parts.notes></x-forms.parts.notes>
-    <div class="g-recaptcha" data-sitekey="6LdZHV0mAAAAAIBLyjqCdsZuHrNuzy82wuAfaFNX"></div>
+    <div class="g-recaptcha" data-sitekey="{{env('RECAPCHA_SITE_KEY')}}"></div>
 
-    <h3 id="formResponse" class="hidden mt-10 font-lemon text-lg text-grey">{{__('Thanks for your time! we wil reach soon!')}}</h3>
-    <button class="btn-sender uppercase font-bold text-yellow bg-white-true w-40 py-1 my-16 mx-auto shadow-btn rounded"
+    <h3 id="formResponse" class="hidden mt-10 text-lg font-lemon text-grey">{{__('Thanks for your time! we wil reach soon!')}}</h3>
+    <button class="w-40 py-1 mx-auto my-16 font-bold uppercase rounded btn-sender text-yellow bg-white-true shadow-btn"
         type="submit">{{__('Send')}}</button>
 
 </form>
