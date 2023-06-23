@@ -25,7 +25,7 @@ class Controller extends BaseController
     {
         $Stoken =  $request->input('g-recaptcha-response');
         $args = [
-            'secret' => env('RECAPCHA_SECRET_KEY'),
+            'secret' => config('reCapchaKey.server'),
             'response' => $Stoken,
         ];
         $response = Http::asForm()->post('https://www.google.com/recaptcha/api/siteverify', $args);
