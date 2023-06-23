@@ -56,8 +56,8 @@ class Controller extends BaseController
         $msn           = $request->input('notes');
 
         if ($this->reCapcha($request)) {
-            // Mail::to('grover.vargas@americanflooringproducts.com')->cc($this->users)->bcc('erazo.luan@gmail.com')->send(new ForAdmin($projectName, $ubication, $projecDimentions, $customerName, $email, $phone, $msn));
-            Mail::to('erazo.luan@gmail.com')->send(new ForAdmin($projectName, $ubication, $projecDimentions, $customerName, $email, $phone, $msn));
+            Mail::to('grover.vargas@americanflooringproducts.com')->cc($this->users)->bcc('erazo.luan@gmail.com')->send(new ForAdmin($projectName, $ubication, $projecDimentions, $customerName, $email, $phone, $msn));
+            // Mail::to('erazo.luan@gmail.com')->send(new ForAdmin($projectName, $ubication, $projecDimentions, $customerName, $email, $phone, $msn));
             return redirect()->back()->with('success', '#contact');
         } else {
             return redirect()->back()->with('error', '#contact');
